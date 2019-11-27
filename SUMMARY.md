@@ -8,6 +8,7 @@
 * [Quant tools and libraries](erasure-quant-docs/quant-tools-and-libraries.md)
 * [Quant App](http://erasurequant.com/)
 * [New user walkthrough](erasure-quant-docs/new-user-walkthrough.md)
+* [Uniswap tutorial](erasure-quant-docs/uniswap-tutorial.md)
 
 ## ErasureBay <a id="erasurebay-docs"></a>
 
