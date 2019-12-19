@@ -1,13 +1,13 @@
 # Erasure Bay
 ErasureBay is a dapp built upon the Erasure protocol. It’s a marketplace for buying/selling information of any kind. It’s Numerai’s demonstration of the power of Erasure to improve the Web itself.
 
-**How it works**
+## How it works
 * Post data to storage that no one owns(ex: ipfs)
 * Stake money on your claims. Encrypt them, then reveal them, to prove you knew something.
 * Sell them under a smart contract that must be enforced.
 
 
-### State Machine Architecture
+## State Machine Architecture
 
 Erasure uses shared registries to establish a single source of truth for the Erasure Protocol. So far, the registries developed are:
 
@@ -16,17 +16,17 @@ Erasure uses shared registries to establish a single source of truth for the Era
 * Erasure_Users: To keep track of users and their data
 * Erasure_Escrows
 
-**Clone Factories**
+### Clone Factories
 
 Using the Spawner library, every item on Erasure is created as a clone of a previously deployed template. We call these Clone Factories. Every clone is also registered in a registry which provides a single source of truth on the status of the protocol.
 
 ![](https://i.imgur.com/bEUAp0H.png)
 
-**Staking**
+### Staking
 
 ![](https://i.imgur.com/JELJwhJ.png)
 
-**Agreements**
+### Agreements
 
 When two parties decide to engage, they begin by staking NMR and agreeing on a set of conditions for punishment. We call this combination of skin in the game and rules of engagement an Erasure_Agreement.
 
@@ -41,16 +41,16 @@ Griefing has two main methods: `_grief()` and `setRatio`
 
 ![](https://i.imgur.com/w0ab7n7.png)
 
-- increaseStake()
+- ***increaseStake()***
 Can be called by staker only to increase the stake
 
-- reward()
+- ***reward()***
 Called by the counterparty to increase the stake
 
-- releaseStake()
+- ***releaseStake()***
 Called by the counterparty to release the stake to the staker
 
-- punish()
+- ***punish()***
 Called by the counterparty to punish the staker
 ```js 
 function punish(uint256 punishment, bytes memory message) public returns
@@ -94,7 +94,7 @@ function startCountdown() public returns (uint256 deadline) {
 
 Once the countdown is over, the stake can call `retrieveStake()` to retrieve the remaining stake as the agreement has ended.
 
-**CountdownGriefingEscrow**
+### CountdownGriefingEscrow
 This contract acts as escrow and allows for a buyer and a seller to deposit their stake and payment before sending it to a CountdownGriefing agreement.
 
 This contract is designed such that there is only two end states: deposits are returned to the buyer and the seller OR the agreement is successfully created.
@@ -102,18 +102,28 @@ This contract is designed such that there is only two end states: deposits are r
 
 We'll go into it's details below
 
-### Step by Step Walkthrough
+## Packages
+- [Erasure Crypto + IPFS Helpers](packages/crypto-ipfs)
+This package contains the crypto system used on erasurequant.com plus some IPFS helper functions.
+- [GraphQL API](packages/the-graph)
+This is the code for our subgraph running on The Graph (a query protocol which listens for events on smart contracts and cache data which can be accessed by a graphql query). This subgraph provides a GraphQL API for querying all the data of the Erasure protocol.
+Here's the deployed subgraph for erasure protocol https://thegraph.com/explorer/subgraph/jgeary/erasure
+
+- [Local Dev Environment](packages/testenv)
+Instantiate a ganache instance with NMR and erasure protocol.
+
+## Step by Step Walkthrough
  
 Let's see how erasure bay interacts with erasure protocol
  
-**New User Registration**
+### New User Registration
  
-- New User connects to Erasure Client. ErasureClient generates asymmetric encryption keys `PubKey`, `PrivKey`
+- ***New User connects to Erasure Client. ErasureClient generates asymmetric encryption keys `PubKey`, `PrivKey`***
 ```js
 const keypair = ErasureHelper.crypto.asymmetric.generateKeyPair(sig, salt);
 ```
 
-- ErasureClient registers user to `Erasure_Users` and uploading it's data
+- ***ErasureClient registers user to `Erasure_Users` and uploading it's data***
 ```js
 const ethers = require("ethers");
 const ErasureUsersArtifact = require("Erasure_Users.json");
@@ -168,7 +178,7 @@ function getUserData(address user) public view returns (bytes memory data) {
     data = _metadata[user];
 }
 ```
-**Creating a Post**
+### Creating a Post
 A Feed_Factory is a factory contract for managing feeds.  
 - Seller first creates a `Feed` template contract from Feed_Factory by calling method `create`
 
@@ -182,11 +192,11 @@ function create(bytes memory callData) public returns (address instance) {
     return instance;
 }
 ```
-- It creates a clone of `Feed` template using a nonce, the nonce is same for clones with same calldata. The nonce can also be used to determine the address of the new contract before creation.
+- ***It creates a clone of `Feed` template using a nonce, the nonce is same for clones with same calldata. The nonce can also be used to determine the address of the new contract before creation.***
 
 _Blob of abi-encoded calldata is used to initialize the template. It returns the instance address of the clone that was created_
 
-- Generates a symmetric encryption key and it's hash
+- ***Generates a symmetric encryption key and it's hash***
 ```js
 const hexlify = utf8str =>
  ethers.utils.hexlify(ethers.utils.toUtf8Bytes(utf8str));
@@ -200,7 +210,7 @@ const keyHash =
   nonce, keypair.secretKey)
 ```
 
-- Encrypt rawData with the symmetric key and gets it ipfs path
+- ***Encrypt rawData with the symmetric key and gets it ipfs path***
 ```js 
 let buf = Buffer.from(rawData);
 let dataEncoded = buf.toString('base64');
@@ -209,12 +219,12 @@ const encryptedFile = ErasureHelper.crypto.symmetric.encryptMessage(
 const rawHash = await ErasureHelper.ipfs.onlyHash(buf)
 const rawDataHash = ErasureHelper.ipfs.hashToHex(rawHash)
 ```
-- Get encryptedData's ipfs path
+- ***Get encryptedData's ipfs path***
 ```js 
 const encryptedFileIpfsPath = await ipfs.pinata.pinTextToIPFS(encryptedFile)
 ```
 
-- Preparing metadata
+- ***Preparing metadata***
 ```js 
 const metaData = {
     nonce,
@@ -224,7 +234,7 @@ const metaData = {
 }
 ```
 
-- Submitting proofHash to our `Feed`
+- ***Submitting proofHash to our `Feed`***
 ```js 
 const proofHash = await
 ErasureHelper.multihash({input:JSON.stringify(metaData), inputType:'raw', 
@@ -253,12 +263,12 @@ function _submitHash(bytes32 hash) internal {
 }
 ```
 
-- Finally submitting metadata to ipfs
+- ***Finally submitting metadata to ipfs***
 ```js 
 const metadataJsonIpfsPath = await ipfs.pinata.pinJSONToIPFS(metadata)
 const metadataHex = ErasureHelper.ipfs.hashToHex(metadataJsonIpfsPath)
 ```
-**Selling a Post**
+### Selling a Post
 
 Once the post is created, it's time to sell.
 - Seller creates `Escrow` using CountdownGriefingEscrow_Factory.create() with `calldata` as parameter. This is exactly same as creating a Feed Template as Feed_Factory and CountdownGriefingEscrow_Factory are both factory contracts and method `create` is a factory method.
@@ -296,7 +306,7 @@ When this escrow template is created, we can provide some params which are then 
 
 EscrowStatus is an enum, `enum EscrowStatus { isOpen, onlyStakeDeposited, onlyPaymentDeposited, isDeposited, isFinalized, isCancelled }`
 
-- Seller deposits the required stake using `Escrow.depositStake()`
+- ***Seller deposits the required stake using `Escrow.depositStake()`***
 
 
 ```js 
@@ -338,7 +348,7 @@ function _depositStake() private {
 }
 ```
 
-- Buyer deposits the required payment using `Escrow.depositPayment()`
+- ***Buyer deposits the required payment using `Escrow.depositPayment()`***
 ```js 
 function depositPayment() public {
     require(isBuyer(msg.sender) || Operated.isOperator(msg.sender),
@@ -379,23 +389,23 @@ function _depositPayment() private {
 
 `Countdown._start()` will start the countdown based on currentblock timestamp, and will return the timestamp at the end of countdown.
 
-- Retrieve buyer's `PubKey` from Erasure_Users
-- Computes encryptedSymKey_Buyer = PubKey_Buyer.encrypt(SymKey)
-- Computes metadata
-- Finalize escrow with creating a griefing agreement `Agreement`
+- ***Retrieve buyer's `PubKey` from Erasure_Users***
+- ***Computes encryptedSymKey_Buyer = PubKey_Buyer.encrypt(SymKey)***
+- ***Computes metadata***
+- ***Finalize escrow with creating a griefing agreement `Agreement`***
 
 Calling `Escrow.finalize()` 
 (1) Will create the agreement
 (2) Transfer the stake and deposit to agreement
 (3) Start the countdown for agreement  `CountdownGriefing(agreement).startCountdown();`
 
-- Uploads metadata to ipfs
+- ***Uploads metadata to ipfs***
 ```js 
 const metadataJsonIpfsPath = await ipfs.pinata.pinJSONToIPFS(metadata)
 const metadataHex = ErasureHelper.ipfs.hashToHex(metadataJsonIpfsPath)
 ```
 
-- Submitting proofHash to buyer
+- ***Submitting proofHash to buyer***
 ```js 
 const proofHash = await
 ErasureHelper.multihash({input:JSON.stringify(metaData), inputType:'raw', 
@@ -403,8 +413,7 @@ outputType:'digest'})
 
 let tx = Escrow.submitData(proofHash)
 ```
-
-Submitting data to the buyer
+- ***Submitting data to the buyer***
 ```js 
 function submitData(bytes memory data) public {
     require(isSeller(msg.sender) || Operated.isOperator(msg.sender), "only
@@ -418,6 +427,68 @@ function submitData(bytes memory data) public {
 }
 ```
 
-- Retrives
-- Computes
-**Revealing a Post**
+- ***Retriving Data from Buyer***
+From Erasure_Users (users registry), get buyer's public key by calling method `getUser(buyerAddr)`
+
+```js 
+// Encrypt symkey with buyer's pubkey
+const encryptedSymkey = crypto.symmetric.encryptMessage(buyerPubkey,
+Buffer.from(symKey))
+```
+
+Send sellData ipfs path to CountdownEscrowGriefing
+```js 
+const selldata = {
+    encryptedSymkey,
+    proofIpfsPath
+}
+const selldataIpfsPath = await
+ErasureHelper.multihash({input:JSON.stringify(sellData), inputType:'raw', 
+outputType:'digest'})
+
+const confirmedTx = await this.submitData(selldataIpfsPath)
+```
+
+- ***Retriving Data from Seller***
+Gets submitted data's ipfs path (`path`) from erasure's subgraph (graphQL api) using escrow address. Get data from that ipfs path
+```js
+const dataSubmittedIPFS = await
+this.ipfsMini.catJSON(hexToHash(path))
+```
+
+Get symmetricKey and metadata from ipfs
+```js 
+// get encrypted symkey
+const encryptedSymkey = dataSubmittedIPFS.encryptedSymkey
+// decrypt it
+const decryptedSymkey = crypto.symmetric.decryptMessage(keypair.privateKey,
+Buffer.from(encryptedSymkey))
+
+const proofIpfsPath = dataSubmittedIPFS.proofIpfsPath
+const proofData = await this.ipfsMini.catJSON(proofIpfsPath)
+```
+
+Get encrypted data path from escrow and then encrypted data itself from it's ipfs path
+```js
+const encryptedDataIpfsPath = proofData.encryptedFileIpfsPath
+const encryptedData = await this.ipfsMini.cat(encryptedDataIpfsPath)
+```
+
+Decrypt data
+```js 
+const rawData =
+ErasureHelper.crypto.symmetric.decryptMessage(decryptedSymkey, encryptedData)
+```
+### Revealing a Post
+- ***Seller uploads SymKey to ipfs***
+```js
+const symkeyIpfsPath = await
+ErasureHelper.multihash({input:JSON.stringify(SymKey), inputType:'raw',
+outputType:'digest'})
+```
+- ***Seller uploads rawdata to ipfs***
+```js 
+const rawdataIpfsPath = await
+ErasureHelper.multihash({input:JSON.stringify(rawData), inputType:'raw', 
+outputType:'digest'})
+```
