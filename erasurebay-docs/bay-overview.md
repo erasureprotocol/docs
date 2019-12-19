@@ -1,28 +1,123 @@
-# ErasureBay Overview
-
-ErasureBay is a dapp on the Erasure protocol. It’s a marketplace for information of any kind. It’s Numerai’s demonstration of the power of Erasure to improve the Web itself.
+# Erasure Bay
+ErasureBay is a dapp built upon the Erasure protocol. It’s a marketplace for buying/selling information of any kind. It’s Numerai’s demonstration of the power of Erasure to improve the Web itself.
 
 **How it works**
-* Post data to storage that no one owns
+* Post data to storage that no one owns(ex: ipfs)
 * Stake money on your claims. Encrypt them, then reveal them, to prove you knew something.
 * Sell them under a smart contract that must be enforced.
 
-## Step by Step Walkthrough
+
+### State Machine Architecture
+
+Erasure uses shared registries to establish a single source of truth for the Erasure Protocol. So far, the registries developed are:
+
+* Erasure_Agreements: To keep track of Griefing templates.
+* Erasure_Posts: To keep track of Feed and Post templates
+* Erasure_Users: To keep track of users and their data
+* Erasure_Escrows
+
+**Clone Factories**
+
+Using the Spawner library, every item on Erasure is created as a clone of a previously deployed template. We call these Clone Factories. Every clone is also registered in a registry which provides a single source of truth on the status of the protocol.
+
+![](https://i.imgur.com/bEUAp0H.png)
+
+**Staking**
+
+![](https://i.imgur.com/JELJwhJ.png)
+
+**Agreements**
+
+When two parties decide to engage, they begin by staking NMR and agreeing on a set of conditions for punishment. We call this combination of skin in the game and rules of engagement an Erasure_Agreement.
+
+> Griefing is an example of an Agreement which allows two parties to come to a resolution without a third party arbitrator through punishing one another at a cost.
+
+Griefing has two main methods: `_grief()` and `setRatio`
+- `_grief` returns the cost of the punishment and is taken form the account of the punisher. Therefore requires appropriate ERC-20 token approval
+- `setRatio` Set the grief ratio and type for a given staker. The ratio represents the cost in NMR to burn 1 NMR of the counterparty.
+
+**First example of Griefing is *SimpleGriefing***
+> SimpleGriefing agreement allows a staker to grant permission to a counterparty to punish, reward, or release their stake
+
+![](https://i.imgur.com/w0ab7n7.png)
+
+- increaseStake()
+Can be called by staker only to increase the stake
+
+- reward()
+Called by the counterparty to increase the stake
+
+- releaseStake()
+Called by the counterparty to release the stake to the staker
+
+- punish()
+Called by the counterparty to punish the staker
+```js 
+function punish(uint256 punishment, bytes memory message) public returns
+(uint256 cost) {
+    // restrict access
+    require(isCounterparty(msg.sender) || Operated.isOperator(msg.sender),
+    "only counterparty or operator");
+
+    // execute griefing
+    cost = Griefing._grief(msg.sender, _data.staker, punishment, message);
+}
+```
+`punishment`: amount of NMR (18 decimals) to be burned from the stake
+`message`: data to emit as event giving reason for the punishment
+
+
+**Second Example is *CountdownGriefing***
+> CountdownGriefing agreement allows a staker to grant permission to a counterparty to punish, reward, or release their stake until the countdown is completed.
+> 
+![](https://i.imgur.com/DXy1lte.png)
+
+It behaves similar to SimpleGriefing with an extra touch of a countdown.
+
+`startCountdown`
+Called by the staker to begin countdown to finalize the agreement
+```js 
+function startCountdown() public returns (uint256 deadline) {
+    require(isStaker(msg.sender) || Operated.isOperator(msg.sender), "only
+    staker or operator");
+
+    // require countdown is not started
+    require(isInitialized(), "deadline already set");
+
+    // start countdown
+    return Countdown._start();
+}
+```
+
+**Countdown** makes use of block timestamps to determine start time and end time.
+`_start()` Starts the countdown based on the current block timestamp and returns `deadline` which is timestamp of the end of the countdown(current timestamp + countdown length)
+
+Once the countdown is over, the stake can call `retrieveStake()` to retrieve the remaining stake as the agreement has ended.
+
+**CountdownGriefingEscrow**
+This contract acts as escrow and allows for a buyer and a seller to deposit their stake and payment before sending it to a CountdownGriefing agreement.
+
+This contract is designed such that there is only two end states: deposits are returned to the buyer and the seller OR the agreement is successfully created.
+![](https://i.imgur.com/89jQMVf.png)
+
+We'll go into it's details below
+
+### Step by Step Walkthrough
  
 Let's see how erasure bay interacts with erasure protocol
  
-### New User Registration
+**New User Registration**
  
 - New User connects to Erasure Client. ErasureClient generates asymmetric encryption keys `PubKey`, `PrivKey`
 ```js
 const keypair = ErasureHelper.crypto.asymmetric.generateKeyPair(sig, salt);
 ```
 
-- ErasureClient uploads `PubKey` to `Erasure_Users`
+- ErasureClient registers user to `Erasure_Users` and uploading it's data
 ```js
 const ethers = require("ethers");
 const ErasureUsersArtifact = require("Erasure_Users.json");
-const user = PubKey;
+const user = keypair.publicKey; // Public Key
 const data = 16; //any data
 
 // UserData in bytes
@@ -73,7 +168,7 @@ function getUserData(address user) public view returns (bytes memory data) {
     data = _metadata[user];
 }
 ```
-### Creating a Post
+**Creating a Post**
 A Feed_Factory is a factory contract for managing feeds.  
 - Seller first creates a `Feed` template contract from Feed_Factory by calling method `create`
 
@@ -163,7 +258,7 @@ function _submitHash(bytes32 hash) internal {
 const metadataJsonIpfsPath = await ipfs.pinata.pinJSONToIPFS(metadata)
 const metadataHex = ErasureHelper.ipfs.hashToHex(metadataJsonIpfsPath)
 ```
-### Selling a Post
+**Selling a Post**
 
 Once the post is created, it's time to sell.
 - Seller creates `Escrow` using CountdownGriefingEscrow_Factory.create() with `calldata` as parameter. This is exactly same as creating a Feed Template as Feed_Factory and CountdownGriefingEscrow_Factory are both factory contracts and method `create` is a factory method.
@@ -325,4 +420,4 @@ function submitData(bytes memory data) public {
 
 - Retrives
 - Computes
-### Revealing a Post
+**Revealing a Post**
