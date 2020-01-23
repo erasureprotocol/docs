@@ -41,7 +41,7 @@ Alpaca has a freely available set of scripting tools, including data, with a bro
 
 #### Signal Scoring Frequency
 
-Signal uploads will be scored daily \(see Evaluating Data below\). You don't need to upload a new CSV each day in order to be scored. Your most recently uploaded CSV of signals will continue to be scored each day going forward, even if you don't upload a new CSV or signals.
+Signal uploads will be scored daily \(see Evaluating Data below\). Your submission is valid for 60 days from the time of submission. After that, you will no longer be eligible for payments and will be removed from the leaderboard. You will still receive scores, and as soon as you submit again, you will be eligible for payouts.
 
 #### **Staking**
 
@@ -79,15 +79,15 @@ Numerai looks for consistency where the signal is high quality over a long perio
 
 Even if Numerai never buys your signals or doesn’t pay enough, our vision is to have other hedge funds buy data on Erasure as well. At the moment, very few people understand crypto so it may take time for other buyers to show interest but the reputation you build on Erasure is forever because all your data will be available on Ethereum and IPFS--your track record is not on Numerai’s servers. And your most recent submission is always encrypted and hidden even from Numerai. If you create and maintain a set of signals with incredible quality and performance for a long period, there’s a good chance you’ll catch the attention of all the best hedge funds in the world over the long term.
 
-To get things started, we’re going to buy half of all submissions to start with so you have a good chance of earning money. We will make payments every day. The amount we pay will be a percentage of stake in the region of 0-3% per day.
-
 #### **Revealing**
 
-Your submissions are encrypted by default and even Numerai cannot see them. You automatically reveal your previous submissions whenever you submit a new submission. This is so your historical predictions can be revealed publicly and verifiably to everyone else so you can build a track record. This lets Numerai \(or other parties\) evaluate your submissions before buying them.
+Your submissions are encrypted by default and even Numerai cannot see them. You automatically privately reveal the submission to Numerai when uploading through the website. In the future, we will let you publicly reveal your past predictions. This will allow you to prove your track record to other parties.
 
 #### **Leaderboard**
 
-We use average daily correlation with stock return as the primary metric for the leaderboard. We use Spearman correlation so the magnitude of your signals don’t matter - just their order. High placements on the leaderboard based on this metric does not imply that your signals will be bought or that you won't be griefed and the leaderboard metric may change.
+We use the historical sharpe of your daily returns as the primary metric for the leaderboard. Your daily returns are calculated by taking the average returns for the top half of your predictions and dividing it by the average returns for the bottom half of your predictions. You need to have at least 20 scores before you can be considered for the leaderboard. This will typically take around 4 weeks.
+
+High placements on the leaderboard based on this metric does not imply that your signals will be bought or that you won't be griefed and the leaderboard metric may change.
 
 #### **Evaluation Data**
 
