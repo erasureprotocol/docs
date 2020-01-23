@@ -1,6 +1,6 @@
 # Quant Overview
 
-Erasure Quant is a new decentralized marketplace for stock market data built on Ethereum. It allows anybody to upload signals, build a track record that anyone can verify, and earn money.  [Read the original Medium post on why we built Erasure](https://medium.com/numerai/numerai-reveals-erasure-unstoppable-peer-to-peer-data-feeds-4fbb8d92820a).
+Erasure Quant is a new decentralized marketplace for stock market data built on Ethereum. It allows anybody to upload signals, build a track record that anyone can verify, and earn money. [Read the original Medium post on why we built Erasure](https://medium.com/numerai/numerai-reveals-erasure-unstoppable-peer-to-peer-data-feeds-4fbb8d92820a).
 
 #### **How ErasureQuant Works**
 
@@ -14,8 +14,7 @@ Erasure Quant is a new decentralized marketplace for stock market data built on 
 
 Stock market signals are feeds of data that can be used by hedge funds like Numerai to improve their performance. A count of the number of tweets mentioning ticker symbols in the Russell 3000 universe every day could be a signal. By itself, it might not be very predictive but taken together with other signals, it might improve performance a lot. Other examples of signals include: signals produced from quant models such as those created on Quantopian, raw high quality data about stocks such as P/E ratios, executive compensation data, signals based on public filings or earnings calls, etc.
 
-Format your signals as a CSV, with tickers on one column and signals, expressed between 0 and 1, on the other. Your CSV upload must contain at least 100 predictions to be considered a valid submission.  
-
+Format your signals as a CSV, with tickers on one column and signals, expressed between 0 and 1, on the other. Your CSV upload must contain at least 100 predictions to be considered a valid submission.
 
 ![](https://lh5.googleusercontent.com/XJXMa3M_ukXNl4YQfEG74BiruWIh1YrC7AKp2B1gprwxFzFTsoO0iGTsy_4xUsdsul3_sp6oNUGRYhZhX-VhT6FZ0Rt-CSFGrA9w5KPLm9EiNB6IFT_EbVMMe_5g8nPSpJHbfjFe)
 
@@ -28,7 +27,7 @@ Unlike websites such as Numerai which provide clean training data to build your 
 Quantopian has a hosted IDE, with tightly integrated data sources and backtesting engine. Unfortunately, it’s tricky to export orders from that IDE. One strategy:
 
 1. Publish your algorithm for live trading
-2. Copy the live trading ID in the URL \(ie, ...live\_algorithms/\[your\_ID\]\)
+2. Copy the live trading ID in the URL \(ie, ...live_algorithms/\[your_ID\]\)
 3. Go to their research notebook \(Research &gt; Notebooks\)
 4. Run this command:
 
@@ -46,8 +45,7 @@ Signal uploads will be scored daily \(see Evaluating Data below\). You don't nee
 
 #### **Staking**
 
-To be eligible to receive payouts from Numerai, Erasure Quant users are required to stake the NMR cryptocurrency on their signals. If you don't have NMR, there are exchanges where you can trade ETH for NMR. For example [Uniswap](https://uniswap.io/).  
-
+To be eligible to receive payouts from Numerai, Erasure Quant users are required to stake the NMR cryptocurrency on their signals. If you don't have NMR, there are exchanges where you can trade ETH for NMR. For example [Uniswap](https://uniswap.io/).
 
 #### **Why Staking**
 
@@ -67,7 +65,7 @@ Numerai earns nothing when a user is griefed. But griefing is an important aspec
 
 #### **Recalling stakes**
 
-All agreements are perpetual unless they are terminated by either party. Numerai can terminate agreements immediately in which case your stake is returned immediately.  You can terminate the agreement with 40 days notice i.e. your stake is still locked and Numerai can still grief it for 40 days after you request to terminate the agreement.  After the 40 days notice, your remaining stake is returned to you. This delay gives Numerai a chance to grief bad signals.
+All agreements are perpetual unless they are terminated by either party. Numerai can terminate agreements immediately in which case your stake is returned immediately. You can terminate the agreement with 40 days notice i.e. your stake is still locked and Numerai can still grief it for 40 days after you request to terminate the agreement. After the 40 days notice, your remaining stake is returned to you. This delay gives Numerai a chance to grief bad signals.
 
 #### **Blackbox Payments**
 
@@ -75,13 +73,13 @@ Numerai does not state how they choose people to pay people or how much they pay
 
 #### **Broad Themes For Good Signals**
 
-Numerai looks for consistency where the signal is high quality over a long period.  Numerai looks for low correlation with other users on the platform \(if you create a signal that’s the same as a signal we’re already buying, we won’t want to buy yours too\). Numerai also looks for signals that are not obvious \(eg if a signal is just a big factor exposure to value\). Quantopian descriptions on the kinds of models they like give some good insights as to what would make a good Erasure Quant signal as well. See [https://www.quantopian.com/get-funded\#the-constraints](https://www.quantopian.com/get-funded#the-constraints) and [https://www.quantopian.com/risk-model](https://www.quantopian.com/risk-model)
+Numerai looks for consistency where the signal is high quality over a long period. Numerai looks for low correlation with other users on the platform \(if you create a signal that’s the same as a signal we’re already buying, we won’t want to buy yours too\). Numerai also looks for signals that are not obvious \(eg if a signal is just a big factor exposure to value\). Quantopian descriptions on the kinds of models they like give some good insights as to what would make a good Erasure Quant signal as well. See [https://www.quantopian.com/get-funded\#the-constraints](https://www.quantopian.com/get-funded#the-constraints) and [https://www.quantopian.com/risk-model](https://www.quantopian.com/risk-model)
 
 #### **Reputation Is Forever**
 
 Even if Numerai never buys your signals or doesn’t pay enough, our vision is to have other hedge funds buy data on Erasure as well. At the moment, very few people understand crypto so it may take time for other buyers to show interest but the reputation you build on Erasure is forever because all your data will be available on Ethereum and IPFS--your track record is not on Numerai’s servers. And your most recent submission is always encrypted and hidden even from Numerai. If you create and maintain a set of signals with incredible quality and performance for a long period, there’s a good chance you’ll catch the attention of all the best hedge funds in the world over the long term.
 
-To get things started, we’re going to buy half of all submissions to start with so you have a good chance of earning money.  We will make payments every day. The amount we pay will be a percentage of stake in the region of 0-3% per day.
+To get things started, we’re going to buy half of all submissions to start with so you have a good chance of earning money. We will make payments every day. The amount we pay will be a percentage of stake in the region of 0-3% per day.
 
 #### **Revealing**
 
@@ -89,9 +87,8 @@ Your submissions are encrypted by default and even Numerai cannot see them. You 
 
 #### **Leaderboard**
 
-We use average daily correlation with stock return as the primary metric for the leaderboard.  We use Spearman correlation so the magnitude of your signals don’t matter - just their order. High placements on the leaderboard based on this metric does not imply that your signals will be bought or that you won't be griefed and the leaderboard metric may change.
+We use average daily correlation with stock return as the primary metric for the leaderboard. We use Spearman correlation so the magnitude of your signals don’t matter - just their order. High placements on the leaderboard based on this metric does not imply that your signals will be bought or that you won't be griefed and the leaderboard metric may change.
 
 #### **Evaluation Data**
 
-We are using [Quandl’s stock adjusted price data](https://www.quandl.com/data/EOD-End-of-Day-US-Stock-Prices) to determine stock returns to calculate your signal’s daily correlation.  Returns for a given day are from the market close to the next day’s market close.  You can submit at any time but you will always be scored against your last submission before the previous close.  For example, if your last submission was at 1pm ET on Tuesday, your score at the close of trading on Wednesday will be the return from Tuesday’s close to Wednesday’s close.  If you submitted on Tuesday at 1pm and Tuesday at 10pm, we would use your Tuesday 1pm submission to score you for Wednesday as that submission came in before the close but we will use your 10pm Tuesday submission to score you on Thursday \(provided you made no additional submissions on Wednesday before market close\).
-
+We are using [Quandl’s stock adjusted price data](https://www.quandl.com/data/EOD-End-of-Day-US-Stock-Prices) to determine stock returns to calculate your signal’s daily correlation. Returns for a given day are from the market close to the next day’s market close. You can submit at any time but you will always be scored against your last submission before the previous close. For example, if your last submission was at 1pm ET on Tuesday, your score at the close of trading on Wednesday will be the return from Tuesday’s close to Wednesday’s close. If you submitted on Tuesday at 1pm and Tuesday at 10pm, we would use your Tuesday 1pm submission to score you for Wednesday as that submission came in before the close but we will use your 10pm Tuesday submission to score you on Thursday \(provided you made no additional submissions on Wednesday before market close\).
