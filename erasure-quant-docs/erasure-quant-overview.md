@@ -92,3 +92,23 @@ High placements on the leaderboard based on this metric does not imply that your
 #### **Evaluation Data**
 
 We are using [Quandl’s stock adjusted price data](https://www.quandl.com/data/EOD-End-of-Day-US-Stock-Prices) to determine stock returns to calculate your signal’s daily correlation. Returns for a given day are from the market close to the next day’s market close. You can submit at any time but you will always be scored against your last submission before the previous close. For example, if your last submission was at 1pm ET on Tuesday, your score at the close of trading on Wednesday will be the return from Tuesday’s close to Wednesday’s close. If you submitted on Tuesday at 1pm and Tuesday at 10pm, we would use your Tuesday 1pm submission to score you for Wednesday as that submission came in before the close but we will use your 10pm Tuesday submission to score you on Thursday \(provided you made no additional submissions on Wednesday before market close\).
+
+### **Calculating Daily Returns**
+
+We take the top half of your prediction by its score and consider them "longs". Then we take the bottom half of your predictions by its score and consider them "shorts". If there is an odd number of stocks predicted on, we make the middle stock a long.
+
+For example in the prediction set below, AAPL and GOOG are longs and FB is a short.
+
+- AAPL, 0.56
+- FB, 0.5
+- GOOG, 0.8
+
+To calculate the "long short portfolio return" for each day, we calculate the average returns of the longs and the average returns of the shorts and then the long short portfolio return is (1+average_long_return)/(1+average_short_return)-1.
+
+If the subsequent daily return of each stock is as follows:
+
+- AAPL, +4%
+- FB, +1%
+- GOOG, +2%
+
+Then the long portfolio return is (4% + 2%)/2 = 3% and the short portfolio return is 1%. Then the long short portfolio return is 1.03/1.01 - 1 = 1.98%.
