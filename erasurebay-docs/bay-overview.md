@@ -1,4 +1,4 @@
-# ErasureBay Overview
+# Erasure Bay overview
 
 c_oming soon_
 

@@ -1,4 +1,4 @@
-# ErasureBay Tools and Libraries
+# Bay tools and libraries
 
 c_oming soon_
 
