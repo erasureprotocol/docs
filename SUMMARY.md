@@ -35,7 +35,7 @@
 * [Contract](https://github.com/numerai/contract)
 * [DeFi Pulse](https://defipulse.com)
 
-## connect
+## Connect
 
 * [Twitter](https://twitter.com/numerai)
 * [RocketChat Community](https://community.numer.ai/channel/erasure)
