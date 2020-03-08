@@ -2,7 +2,7 @@
 
 * [Welcome to Erasure World](README.md)
 
-## ErasureBay <a id="erasurebay-docs"></a>
+## Erasure Bay <a id="erasurebay-docs"></a>
 
 * [Erasure Bay overview](erasurebay-docs/bay-overview.md)
 * [New Bay user walkthrough](erasurebay-docs/new-bay-user-walkthrough.md)
