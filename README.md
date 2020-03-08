@@ -1,2 +1,2 @@
-# Welcome to the Erasure Protocol Docs
+# Welcome to Erasure World
 

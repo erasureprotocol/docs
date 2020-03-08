@@ -1,26 +1,27 @@
 # Table of contents
 
-* [Welcome to the Erasure Protocol Docs](README.md)
-
-## Erasure Quant <a id="erasure-quant-docs"></a>
-
-* [Quant Overview](erasure-quant-docs/erasure-quant-overview.md)
-* [Quant tools and libraries](erasure-quant-docs/quant-tools-and-libraries.md)
-* [Quant App](http://erasurequant.com/)
-* [New user walkthrough](erasure-quant-docs/new-user-walkthrough.md)
-* [Uniswap tutorial](erasure-quant-docs/uniswap-tutorial.md)
+* [Welcome to Erasure World](README.md)
 
 ## ErasureBay <a id="erasurebay-docs"></a>
 
 * [ErasureBay Overview](erasurebay-docs/bay-overview.md)
 * [ErasureBay Tools and Libraries](erasurebay-docs/erasurebay-tools.md)
 * [Bay App](erasurebay-docs/bay-app.md)
+* [FAQ](erasurebay-docs/faq.md)
+
+## Erasure Quant <a id="erasure-quant-docs"></a>
+
+* [Quant Overview](erasure-quant-docs/erasure-quant-overview.md)
+* [Quant Tools and Libraries](erasure-quant-docs/quant-tools-and-libraries.md)
+* [Quant App](http://erasurequant.com/)
+* [New user walkthrough](erasure-quant-docs/new-user-walkthrough.md)
+* [Uniswap tutorial](erasure-quant-docs/uniswap-tutorial.md)
 
 ## Help
 
 * [Technical Support](help/technical-support.md)
+* [Authereum](help/authereum.md)
 * [MetaMask](help/metamask.md)
-* [Glossary](help/glossary.md)
 * [Read, watch, listen](help/read-watch-listen.md)
 * [FAQ](help/faq.md)
 * [Numerai Tournament](help/numerai-tournament.md)
