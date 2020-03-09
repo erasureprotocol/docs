@@ -1,5 +1,7 @@
 # New Bay user walkthrough
 
+_Watch the tutorial walkthrough at YouTube_
+
 ![](../.gitbook/assets/step1.gif)
 
 Click "Sign In" and then click "Sign In."
