@@ -1,6 +1,6 @@
 # New Bay user walkthrough
 
-_Watch the tutorial walkthrough at YouTube_
+_Watch the tutorial walkthrough at_ [_YouTube_](https://youtu.be/0QpP05rqWUc)\_\_
 
 ![](../.gitbook/assets/step1.gif)
 
