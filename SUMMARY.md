@@ -6,9 +6,8 @@
 
 * [Erasure Bay overview](erasurebay-docs/bay-overview.md)
 * [New Bay user walkthrough](erasurebay-docs/new-bay-user-walkthrough.md)
-* [Bay tools and libraries](erasurebay-docs/erasurebay-tools.md)
-* [Bay App](erasurebay-docs/bay-app.md)
 * [FAQ](erasurebay-docs/faq.md)
+* [Bay App](https://erasurebay.org)
 
 ## Erasure Quant <a id="erasure-quant-docs"></a>
 

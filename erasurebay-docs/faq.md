@@ -16,7 +16,7 @@ To make or fulfill a request
 
 1. Visit [erasurebay.org](http://erasurebay.org/) and click _**Sign In**_. 
 2. Create and connect Authereum account.
-3. Create and connect Twitter account.
+3. Connect Twitter account.
 4. Deposit money into your Authereum wallet.
 5. You are ready to go!
 
