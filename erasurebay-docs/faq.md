@@ -6,9 +6,11 @@ description: Frequently Asked Questions about Erasure Bay
 
 ### **What is Erasure Bay?**
 
-Erasure Bay is an unstoppable information marketplace built on top of the [Erasure Protocol](https://erasure.world/). The marketplace is fully decentralized and peer-to-peer. You can use Erasure Bay to [ask the internet for any information](faq.md#what-can-i-request). Be careful! Anyone can fulfill a request on a first come first serve basis to claim the reward, so make sure you get it right. When fulfilling a request, sellers must [put money at stake](faq.md#how-do-i-create-a-request) which gives the requester the ability to [punish their stake and their reward](faq.md#what-is-a-punishment) if they are unsatisfied.
+Erasure Bay is an unstoppable information marketplace built on top of the Erasure Protocol. The marketplace is fully decentralized and peer-to-peer. You can use Erasure Bay to [ask the internet for any information](faq.md#what-can-i-request). Be careful! Anyone can fulfill a request on a first come first serve basis to claim the reward, so make sure you get it right. When fulfilling a request, sellers must [put money at stake](faq.md#how-do-i-create-a-request) which gives the requester the ability to [punish their stake and their reward](faq.md#what-is-a-punishment) if they are unsatisfied.
 
 ### **What is Erasure Protocol?**
+
+The Erasure Protocol is a new set of primitives which allows for building new kinds of applications on the internet. It solves many of the fundamental problems the internet has today. Find out more at [erasure.world](https://erasure.world/)
 
 ### **How do I get started?**
 
