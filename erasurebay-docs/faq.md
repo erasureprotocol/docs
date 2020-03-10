@@ -6,27 +6,13 @@ description: Frequently Asked Questions about Erasure Bay
 
 ### **What is Erasure Bay?**
 
-## Getting Super Powers
-
 Erasure Bay is an information marketplace built on top of the Erasure Protocol. You can use it to request any information or fulfill existing requests. The marketplace uses skin in the game and altruistic punishments to keep sellers honest.
-
-Becoming a super hero is a fairly straight forward process:
 
 ### **How do I get started?**
 
-```
-$ give me super-powers
-```
-
 To view existing requests follow [@ErasureBay](https://twitter.com/ErasureBay) on Twitter.
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
 To make or fulfill a request
-
-Once you're strong enough, save the world:
 
 1. Visit [erasurebay.org](http://erasurebay.org/) and click 'Sign In'. 
 2. Create and connect Authereum account.
@@ -34,16 +20,7 @@ Once you're strong enough, save the world:
 4. Deposit money into your Authereum wallet.
 5. You are ready to go!
 
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
-
 [See full walkthrough](new-bay-user-walkthrough.md)
-
-
 
 ### **What can I request?**
 
