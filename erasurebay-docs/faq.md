@@ -6,7 +6,7 @@ description: Frequently Asked Questions about Erasure Bay
 
 ### **What is Erasure Bay?**
 
-Erasure Bay is an information marketplace built on top of the Erasure Protocol. You can use it to request any information or fulfill existing requests. The marketplace uses skin in the game and altruistic punishments to keep sellers honest.
+Erasure Bay is an unstoppable information marketplace built on top of the [Erasure Protocol](https://erasure.world/). You can use Erasure Bay to request any information. The marketplace is fully decentralized and peer-to-peer. Sellers must [put money at stake](https://docs.erasure.world/erasurebay-docs/faq#what-is-a-stake) in order to fulfill a request and Buyers can punish their stake to keep them honest.
 
 ### **How do I get started?**
 
@@ -14,7 +14,7 @@ To view existing requests follow [@ErasureBay](https://twitter.com/ErasureBay) o
 
 To make or fulfill a request
 
-1. Visit [erasurebay.org](http://erasurebay.org/) and click 'Sign In'. 
+1. Visit [erasurebay.org](http://erasurebay.org/) and click _**Sign In**_. 
 2. Create and connect Authereum account.
 3. Create and connect Twitter account.
 4. Deposit money into your Authereum wallet.
