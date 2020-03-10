@@ -10,7 +10,7 @@ Erasure Bay is an unstoppable information marketplace built on top of the Erasur
 
 ### **What is Erasure Protocol?**
 
-The Erasure Protocol is a new set of primitives which allows for building new kinds of applications on the internet. It solves many of the fundamental problems the internet has today. Find out more at [erasure.world](https://erasure.world/)
+The Erasure Protocol is a new set of primitives which allows for building new kinds of applications on the internet. It solves many of the fundamental problems the internet has today. Find out more at [erasure.world](https://erasure.world/).
 
 ### **How do I get started?**
 
