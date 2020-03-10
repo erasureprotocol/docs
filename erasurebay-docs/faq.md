@@ -6,91 +6,129 @@ description: Frequently Asked Questions about Erasure Bay
 
 ### **What is Erasure Bay?**
 
-Erasure Bay is an unstoppable information marketplace built on top of the [Erasure Protocol](https://erasure.world/). You can use Erasure Bay to request any information. The marketplace is fully decentralized and peer-to-peer. Sellers must [put money at stake](https://docs.erasure.world/erasurebay-docs/faq#what-is-a-stake) in order to fulfill a request and Buyers can punish their stake to keep them honest.
+Erasure Bay is an unstoppable information marketplace built on top of the [Erasure Protocol](https://erasure.world/). The marketplace is fully decentralized and peer-to-peer. You can use Erasure Bay to [ask the internet for any information](faq.md#what-can-i-request). Be careful! Anyone can fulfill a request on a first come first serve basis to claim the reward, so make sure you get it right. When fulfilling a request, sellers must [put money at stake](faq.md#how-do-i-create-a-request) which gives the requester the ability to [punish their stake and their reward](faq.md#what-is-a-punishment) if they are unsatisfied.
+
+### **What is Erasure Protocol?**
 
 ### **How do I get started?**
 
-To view existing requests follow [@ErasureBay](https://twitter.com/ErasureBay) on Twitter.
+**Don't like to read?** Me neither. [Watch video tutorial here](new-bay-user-walkthrough.md)
 
-To make or fulfill a request
+**To view existing requests:** Follow [@ErasureBay](https://twitter.com/ErasureBay) on Twitter.
+
+**To make or fulfill a request:**
 
 1. Visit [erasurebay.org](http://erasurebay.org/) and click _**Sign In**_. 
-2. Create and connect Authereum account.
-3. Connect Twitter account.
-4. Deposit money into your Authereum wallet.
-5. You are ready to go!
-
-[See full walkthrough](new-bay-user-walkthrough.md)
+2. Create and connect your [Authereum wallet](faq.md#what-is-authereum).
+3. Create and connect your [Twitter account](faq.md#why-do-i-need-to-connect-my-twitter-account).
+4. [Deposit money](faq.md#how-do-i-deposit-money) into your wallet.
+5. You are ready to [make](faq.md#how-do-i-make-a-request) or [fulfill](faq.md#how-do-i-fulfill-a-request) a request!
 
 ### **What can I request?**
 
 You can request anything that can be expressed in digital form. You can see existing request by following [@ErasureBay](https://twitter.com/ErasureBay) on Twitter to get a sense of what people are requesting. Fulfilling a request requires uploading a file that meets the expectation of the requester. It could be a dataset, a photo that proves a task was completed, a software vulnerability exploit, or anything in between. Video files, image files, text files; the possibilities are almost limitless. Maybe your business wants to host an infosec bounty program. Maybe you want to determine if your intellectual property is being traded on the Dark Web. You can make a request for any information and another user will fulfill it.
 
-### **How do I create a request?**
+### **How do I make a request?**
 
-Requesters will need to obtain an amount of DAI equivalent to the desired reward. For instance, if a user wants to obtain 2GB of Baby Yoda memes and wishes to reward someone 1,000 DAI for doing so, they will need to hold at least 1,000 DAI in their Authereum wallet. Then, you’ll need to designate the amount of DAI required for the Fulfiller to claim the reward, along with the attack ratio you wish to use. Finally, determine the attack period \(in days\) and post your request! Your reward will be staked until your request is fulfilled, or you cancel the request.
+Once you've decided what to request, it's time to start filling up your request details:
 
-### **What is a Stake?** 
+**Description**
 
-A stake is an amount of money attached to a request fulfillment. By staking, sellers have skin in the game to support their claim about the quality of their information. Large stakes imply valuable information, and therefore greater potential compensation. For Erasure Bay, a stake is an amount of USD staked on the Erasure Protocol. It uses DAI stablecoins which has a value pegged to the US Dollar. One DAI is worth one USD. Since DAI is a token, it can be used as a medium of exchange on Erasure Bay, providing clarity on the financial incentives and financial risks of providing bad information.
+The description is used to tell the world what information you are requesting. You can put anything here, it could be one sentence, or it could be a 100 page document. To get the best response possible, you should describe how you will determine if a response is good or bad.
 
-### **Where does the Reward go?**
+{% hint style="info" %}
+🧙‍♂️**Hint:** To get the best response possible, you should describe how you will determine if a response is good or bad.
+{% endhint %}
 
-### **What is a Punishment?**
+**Reward**
 
-Punishments keep sellers honest. When a seller attaches a stake to their fulfillment, they give the right to the requester to burn their stake. This protects requesters since they can now punish fulfillers that provide incorrect or low-quality information. Burning a stake means that the money is deleted forever. A punishment is not free. In order to punish, the requester must burn an proportional amount of money according to the Punishment Ratio. An intuitive way to think about the Punishment Ratio is as how much it costs to punish $1 of the stake. For instance, if the stake is $1,000, the punishment ratio 0.1, and the requester wants to punish for $100, then it will cost the requester $100\*0.1 = $10 to punish $100 from the stake.
+Before you can place the request, you need to make sure you've [deposited enough money in your wallet](faq.md#how-do-i-deposit-money) to pay the reward amount. For instance, if I requests 100 Baby Yoda memes and am willing to reward someone $1,000 for them, I first need to deposit at least $1,000 in my wallet. ****This reward will be locked in an escrow and added to the stake of the fulfiller when the request is fulfilled.
 
-### **What is the Punishment Period?**
+{% hint style="info" %}
+🧙‍♂️**Hint:** If you make a request but do not find anyone to fulfill it, you can cancel it from the request page to get the reward payment refunded.
+{% endhint %}
 
-The Punishment Period is the amount of time, in days, that the Requester has to verify the quality of the information provided by the Fulfiller. Within this window, the Requester may punish the Fulfiller’s stake if they are dissatisfied, but after this period of time, the information included in the fulfillment is deemed to be satisfactory and the stake is released. The Requester can decide to release the stake early if they are satisfied with the submission.
+{% hint style="danger" %}
+🧞‍♂️**Be careful:** Once a request is fulfilled, you can no longer get the reward back. It is automatically added to the stake of the fulfiller. 
+{% endhint %}
+
+**Required Stake**
+
+The required stake is the amount of money a fulfiller needs to attach to their fulfillment. By staking, fulfillers have skin in the game to support their claim about the quality of their information they submitted. Large stakes imply valuable information, and therefore greater potential compensation. Remember, the reward amount is added to the fulfiller's stake as soon a the request is fulfilled. For Erasure Bay, a stake is an amount of USD staked on the Erasure Protocol. It uses DAI stablecoins which has a value pegged to the US Dollar. One DAI is worth one USD.
+
+{% hint style="info" %}
+🧙‍♂️**Hint:** If you are not sure what stake amount to ask for, you can always ask for $1B and add a note in your description saying you want to negotiate the details of the detail.
+{% endhint %}
+
+{% hint style="danger" %}
+🧞‍♂️**Be careful:** Requests can be fulfilled by anyone on a first come first serve basis. Make sure your description is as specific as possible.
+{% endhint %}
+
+**Punishment Ratio**
+
+Punishments keep sellers honest. When a fulfiller attaches a stake to their fulfillment, they give the right to the requester to burn their stake. This protects requesters since they can now punish fulfillers that provide incorrect or low-quality information. Burning a stake means that the money is deleted forever. A punishment is not free. In order to punish, the requester must burn an proportional amount of money according to the selected punishment ratio. An intuitive way to think about the punishment ratio is as how much it costs to punish $1 of the stake. For instance, if the stake is $1,000, the punishment ratio 0.1, and the requester wants to punish for $100 from the stake, then it will cost the requester $100\*0.1 = $10.
+
+**Punishment Period**
+
+The Punishment Period is the amount of time that the requester has to verify the quality of the information provided by the fulfiller. Within this window, the requester may punish the fulfiller’s stake if they are dissatisfied, but after this period of time, the information included in the fulfillment is deemed to be satisfactory and the stake is released. The requester can decide to release the stake early if they are satisfied with the submission.
+
+### **How do I access my wallet?**
+
+You can access your wallet by clicking on your profile name in the top right corner of your screen. This will open up your wallet page where you can see your [DAI balance](faq.md#what-is-dai), deposit money, or access your [Authereum account](faq.md#what-is-authereum).
+
+![](../.gitbook/assets/screen-shot-2020-03-10-at-6.22.21-am.png)
 
 ### How do I deposit money?
 
-This can be done with a Debit Card, Apple Pay, or Google Pay by purchasing DAI.
+Erasure Bay uses a stablecoin called DAI for payments and stakes on the marketplace. 1 DAI = 1USD. [See What is DAI?](faq.md#what-is-dai) 
 
-In order to create a bounty, you need to obtain DAI. You can do so a number of ways, the easiest being to use Authereum to purchase DAI using Apple Pay or a debit card.
+If you do not own any DAI yet, you can convert USD into DAI using [Wyre](https://www.sendwyre.com/). You must first sign in, click on your profile, then click the button that says **Get DAI**. This will redirect you to the page where you can convert USD to DAI using Debit Card, Apple Pay, or Google Pay depending on your browser. Wyre charges a fee to convert USD into DAI so make sure to account for it correctly.
 
-### **Why do I need to connect my Twitter account?**
+If you already own some DAI, you can transfer it to your [Authereum wallet](faq.md#what-is-an-authereum-wallet) by using the ENS address or the Ethereum address.
 
-Twitter is necessary to establish reputation and identity. Since requests and fulfillments are tweeted by the [Erasure Bay Bot](http://www.twitter.com/erasurebaybot), a history is established which other users can review. Reputational risk is one of the punishment/reward mechanisms of Erasure Bay, so an active Twitter account is required.
+{% hint style="info" %}
+🧙‍♂️**Hint:** Wyre charges a small fee to convert USD into DAI. Make sure to account for it.
+{% endhint %}
 
-**Why do you need to have so much access to my Twitter account?**
+### **Is my money safe?**
 
-We only ask for the minimum permissions available. [Learn more at Twitter](https://developer.twitter.com/en/docs/basics/apps/guides/app-permissions).
+While nothing in life is risk free, you can rest assured your money is safe. Erasure Bay uses the [Erasure Protocol](faq.md#what-is-erasure-protocol) to secure your funds. Make sure you remember the following: 
+
+* **Wallet Balance:** The money in your wallet is secured by the [Authereum](faq.md#what-is-authereum). 
+* **Reward:** The money attached to a request reward is locked up in an escrow and can be fulfilled by anyone on a first come first serve basis. Once the request is fulfilled, the reward is added to the fulfiller's stake and it is no longer possible for the requester to get it back. If no one fulfills the request, the requester can cancel the request to retrieve the reward.
+* **Stake:** The money locked up in a stake includes the stake of the fulfiller and the reward of the requester. This stake is locked up in the escrow until the requester releases it or the [punish period](faq.md#how-do-i-make-a-request) is over. Be careful, the requester can burn the stake at any time during the punish period according to the [punish ratio](faq.md#how-do-i-make-a-request) if they are unsatisfied with the fulfillment.
+
+### **Why use Twitter?**
+
+Twitter fulfills multiple purposes on Erasure Bay:
+
+1. Build trust amongst marketplace participants
+2. Do content discovery through the bot [@ErasureBay](https://twitter.com/erasurebay)
+3. Receive notifications when a request is fulfilled
+
+We only ask for the [minimum OAuth permissions](https://developer.twitter.com/en/docs/basics/apps/guides/app-permissions) available to establish a provable link between your Authereum wallet and your Twitter account. This permission is a one time access.
 
 ### **What is Authereum?**
 
-With Authereum, you will need to create and connect an account for use within Erasure Bay. Once created, this will act as the primary source for your funds within the Erasure Bay marketplace. As mentioned above, you can use popular applications like Apple Pay to purchase DAI and fund your account/wallet.
+[Authereum](https://authereum.com/) is a wallet which allows you to store money that you can use with applications like Erasure Bay built on the [Ethereum blockchain](https://docs.ethhub.io/ethereum-basics/what-is-ethereum/). You can access your Erasure Bay account from any device by logging in with your Authereum username and password. You can use your Authereum account to [deposit money](faq.md#how-do-i-deposit-money) to Erasure Bay.
 
-Authereum is a non-custodial ERC-20 compliant crypto wallet that was built with web3 primitives in mind. Like any good crypto wallet, you’re in control of your keys \(remember: not your keys not your coins\) and account creation is easy - very similar to what you would experience with MetaMask.
+Authereum is a non-custodial wallet which means no one has access to your money. This means you do not have to trust anyone but yourself. Authereum makes it easy for non-technical users to keep their keys secure while providing advanced features. You can read [here](https://medium.com/authereum/authereum-key-architecture-explained-8e0781cf3ea0) if you’d like a more advanced understanding of Authereum’s contract-account architecture.
 
-Authereum makes life easier for non-technical users to get on board with Ethereum based applications like Erasure Bay. While on the surface it feels much like a wallet \(and is\), it’s really a larger platform for onboarding users to decentralized apps or DApps behind the scenes.
-
-One of the important differentiators of Authereum versus say MetaMask is they make use of contract based accounts to enable additional key management features; but for the purposes of this FAQ we’ll be sticking to basic wallet use functionality instead. You can read [here](https://medium.com/authereum/authereum-key-architecture-explained-8e0781cf3ea0) if you’d like a more advanced understanding of Authereum’s contract-account architecture.
-
-Authereum is capable of holding many types of crypto tokens including: DAI, BAT, ETH, GNT, and can also hold collectibles if you choose to use it for such purposes.
+{% hint style="danger" %}
+🧞‍♂️**Be careful:** Your Authereum account secures all the money and valuable information you submit to Erasure Bay. Make sure to choose a secure password and store it with a password manager like [1password](https://1password.com/) or [lastpass](https://www.lastpass.com/).
+{% endhint %}
 
 ### **What is DAI?** 
 
-Since crypto is volatile, relative stake value must be stable. DAI provides that stability in the form of a stable 1:1 peg to the US Dollar. DAI also allows for the use of smart contracts, removing the need for trust between parties. Staking and reputational risk are the risk/reward tradeoff and the attack ratio is the mechanism for punishment for providing bad information. [What is DAI?](https://medium.com/mycrypto/what-is-dai-and-how-does-it-work-742d09ba25d6) 
+DAI is a digital representation of a US dollar. It's a stable cryptocurrency that runs on the [Ethereum blockchain](https://docs.ethhub.io/ethereum-basics/what-is-ethereum/). DAI's value is backed by cryptocurrency collateral, mainly ether, the currency of the Ethereum blockchain. Dai maintains its stability to the dollar by aligning market incentives among thousands of global actors. DAI allows for the use of smart contract platforms like the [Erasure Protocol](faq.md#what-is-erasure-protocol). 
 
-### **How do I obtain DAI?** 
-
-DAI can be purchased directly using Apple Pay or via debit card in Authereum. For more advanced users, Uniswap provides a way to exchange cryptocurrency for DAI.
-
-### How do I make a request for less than a day?
-
-### Can I have multiple accounts?
-
-### **Are there any fees?**
-
-Erasure Bay does not charge any fees to use the marketplace.
+You can learn more about stablecoins like DAI [here](https://blog.dharma.io/what-is-a-stablecoin/).
 
 ### **Does Erasure Bay use NMR?**
 
-Yes. While Erasure Bay uses DAI for payments and staking, NMR is used for burning when a stake is punished. This happens in the background so the user never needs to interact with NMR.
+Yes. While Erasure Bay uses DAI for payments and staking, it [secretly burns up NMR in the background](https://medium.com/numerai/wheres-nmr-4b411db1e07c?source=friends_link&sk=1c1553ec198e3b486b9a40a39d2e4503).
 
-### **How do I know I wont lose my money?**
+### **What are the fees?**
 
-Rewards are moved into smart contracts as a stake and only released to the Fulfiller at the end of the attack window. No other party except for the Requester can access the DAI tied to a bounty stake. If a Fulfiller provides you bad information, then you can utilize the attack function to burn their stake at the ratio you specified when you created the bounty. Since no third party trust is required, it is impossible for anyone to “steal” your funds. You are always in full control of the bounty.
+Erasure Bay does not charge any fees to use the marketplace. This is possible through the magic of crypto-economic incentives. More on this soon.
 
