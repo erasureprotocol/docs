@@ -19,8 +19,8 @@ Erasure Bay is an unstoppable information marketplace built on top of the [Erasu
 **To make or fulfill a request:**
 
 1. Visit [erasurebay.org](http://erasurebay.org/) and click _**Sign In**_. 
-2. Create and connect your [Authereum wallet](faq.md#what-is-authereum).
-3. Create and connect your [Twitter account](faq.md#why-do-i-need-to-connect-my-twitter-account).
+2. Connect your [Authereum wallet](faq.md#what-is-authereum).
+3. Connect your [Twitter account](faq.md#why-do-i-need-to-connect-my-twitter-account).
 4. [Deposit money](faq.md#how-do-i-deposit-money) into your wallet.
 5. You are ready to [make](faq.md#how-do-i-make-a-request) or [fulfill](faq.md#how-do-i-fulfill-a-request) a request!
 
