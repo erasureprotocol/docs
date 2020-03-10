@@ -82,11 +82,15 @@ You can access your wallet by clicking on your profile name in the top right cor
 
 ### How do I deposit money?
 
-Erasure Bay uses a stablecoin called DAI for payments and stakes on the marketplace. 1 DAI = 1USD. [See What is DAI?](faq.md#what-is-dai) 
+Erasure Bay uses a stablecoin called DAI for payments and stakes on the marketplace. [What is DAI?](faq.md#what-is-dai) 
 
 If you do not own any DAI yet, you can convert USD into DAI using [Wyre](https://www.sendwyre.com/). You must first sign in, click on your profile, then click the button that says **Get DAI**. This will redirect you to the page where you can convert USD to DAI using Debit Card, Apple Pay, or Google Pay depending on your browser. Wyre charges a fee to convert USD into DAI so make sure to account for it correctly.
 
 If you already own some DAI, you can transfer it to your [Authereum wallet](faq.md#what-is-an-authereum-wallet) by using the ENS address or the Ethereum address.
+
+{% hint style="info" %}
+🧙‍♂️**Hint:** Wyre can be unreliable for debit card payments. If you are having issues, try using Apple Pay on Safari for IOS.
+{% endhint %}
 
 {% hint style="info" %}
 🧙‍♂️**Hint:** Wyre charges a small fee to convert USD into DAI. Make sure to account for it.
@@ -117,7 +121,7 @@ We only ask for the [minimum OAuth permissions](https://developer.twitter.com/en
 Authereum is a non-custodial wallet which means no one has access to your money. This means you do not have to trust anyone but yourself. Authereum makes it easy for non-technical users to keep their keys secure while providing advanced features. You can read [here](https://medium.com/authereum/authereum-key-architecture-explained-8e0781cf3ea0) if you’d like a more advanced understanding of Authereum’s contract-account architecture.
 
 {% hint style="danger" %}
-🧞‍♂️**Be careful:** Your Authereum account secures all the money and valuable information you submit to Erasure Bay. Make sure to choose a secure password and store it with a password manager like [1password](https://1password.com/) or [lastpass](https://www.lastpass.com/).
+🧞‍♂️**Be careful:** Your Authereum account secures all the money and valuable information you submit to Erasure Bay. Make sure to choose a secure password and store it with a password manager like [1password](https://1password.com/) or [lastpass](https://www.lastpass.com/). For more tips on keeping your wallet secure, see the [Authereum blog](https://link.medium.com/maY63KJmK4).
 {% endhint %}
 
 ### **What is DAI?** 
@@ -133,4 +137,8 @@ Yes. While Erasure Bay uses DAI for payments and staking, it [secretly burns up 
 ### **What are the fees?**
 
 Erasure Bay does not charge any fees to use the marketplace. This is possible through the magic of crypto-economic incentives. More on this soon.
+
+### Still need help?
+
+Contact us on [RocketChat](https://community.numer.ai/channel/erasure/) / [Twitter](http://twitter.com/numerai) / [Telegram](http://t.me/NMR_Official).
 
