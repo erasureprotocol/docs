@@ -48,7 +48,7 @@ The Punishment Period is the amount of time, in days, that the Requester has to 
 
 This can be done with a Debit Card, Apple Pay, or Google Pay by purchasing DAI.
 
-You don’t. In order to create a bounty, you need to obtain DAI. You can do so a number of ways, the easiest being to use Authereum to purchase DAI using Apple Pay or a debit card.
+In order to create a bounty, you need to obtain DAI. You can do so a number of ways, the easiest being to use Authereum to purchase DAI using Apple Pay or a debit card.
 
 ### **Why do I need to connect my Twitter account?**
 
@@ -56,7 +56,7 @@ Twitter is necessary to establish reputation and identity. Since requests and fu
 
 **Why do you need to have so much access to my Twitter account?**
 
-We only ask for the minimum permissions available. Here’s the [proof](https://developer.twitter.com/en/docs/basics/apps/guides/app-permissions), with a screenshot!
+We only ask for the minimum permissions available. [Learn more at Twitter](https://developer.twitter.com/en/docs/basics/apps/guides/app-permissions).
 
 ### **What is Authereum?**
 
