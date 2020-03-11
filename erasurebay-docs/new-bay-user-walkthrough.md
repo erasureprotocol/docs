@@ -14,6 +14,10 @@ Click "Create Account" and then type in your username and click "Continue."
 
 Type in your email address and password, confirm your password, then click the check box to accept the Terms of Service and Privacy Policy. Click "Sign Up."
 
+IMPORTANT NOTE! REMEMBER TO SAVE YOUR AUTHEREUM WORD SEED IN CASE YOU FORGET YOUR PASSWORD!
+
+![](../.gitbook/assets/step7_recovery.gif)
+
 Activate your account with Authereum by clicking the link in the email sent to you by Authereum.
 
 ![](../.gitbook/assets/step4.gif)
