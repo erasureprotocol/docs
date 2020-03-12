@@ -59,7 +59,7 @@ Before you can place the request, you need to make sure you've [deposited enough
 The required stake is the amount of money a fulfiller needs to attach to their fulfillment. By staking, fulfillers have skin in the game to support their claim about the quality of their information they submitted. Large stakes imply valuable information, and therefore greater potential compensation. Remember, the reward amount is added to the fulfiller's stake as soon a the request is fulfilled. For Erasure Bay, a stake is an amount of USD staked on the Erasure Protocol. It uses DAI stablecoins which has a value pegged to the US Dollar. One DAI is worth one USD.
 
 {% hint style="info" %}
-🧙‍♂️**Hint:** If you are not sure what stake amount to ask for, you can always ask for $1B and add a note in your description saying you want to negotiate the details of the detail.
+🧙‍♂️**Hint:** If you are not sure what stake amount to ask for, you can always ask for $1B and add a note in your description saying you want to negotiate the details of the deal.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -100,7 +100,7 @@ If you already own some DAI, you can transfer it to your [Authereum wallet](faq.
 
 While nothing in life is risk free, you can rest assured your money is safe. Erasure Bay uses the [Erasure Protocol](faq.md#what-is-erasure-protocol) to secure your funds. Make sure you remember the following: 
 
-* **Wallet Balance:** The money in your wallet is secured by the [Authereum](faq.md#what-is-authereum). 
+* **Wallet Balance:** The money in your wallet is secured by [Authereum](faq.md#what-is-authereum). 
 * **Reward:** The money attached to a request reward is locked up in an escrow and can be fulfilled by anyone on a first come first serve basis. Once the request is fulfilled, the reward is added to the fulfiller's stake and it is no longer possible for the requester to get it back. If no one fulfills the request, the requester can cancel the request to retrieve the reward.
 * **Stake:** The money locked up in a stake includes the stake of the fulfiller and the reward of the requester. This stake is locked up in the escrow until the requester releases it or the [punish period](faq.md#how-do-i-make-a-request) is over. Be careful, the requester can burn the stake at any time during the punish period according to the [punish ratio](faq.md#how-do-i-make-a-request) if they are unsatisfied with the fulfillment.
 
@@ -109,7 +109,7 @@ While nothing in life is risk free, you can rest assured your money is safe. Era
 Twitter fulfills multiple purposes on Erasure Bay:
 
 1. Build trust amongst marketplace participants
-2. Do content discovery through the bot [@ErasureBay](https://twitter.com/erasurebay)
+2. Provide content discovery through the bot [@ErasureBay](https://twitter.com/erasurebay)
 3. Receive notifications when a request is fulfilled
 
 We only ask for the [minimum OAuth permissions](https://developer.twitter.com/en/docs/basics/apps/guides/app-permissions) available to establish a provable link between your Authereum wallet and your Twitter account. This permission is a one time access.
