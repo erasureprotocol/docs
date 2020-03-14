@@ -26,7 +26,7 @@ Authorize Erasure Bay to access your Twitter account by clicking "Authorize App.
 
 ![](../.gitbook/assets/step5.gif)
 
-Write your request, specify your reward, required stake, attack ratio and attack period, then click "Make Request." Click "Confirm."
+Write your request, specify your reward, required stake, punish ratio and punish period, then click "Make Request." Click "Confirm."
 
 ![](../.gitbook/assets/step6.gif)
 
