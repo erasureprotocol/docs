@@ -74,6 +74,36 @@ Punishments keep sellers honest. When a fulfiller attaches a stake to their fulf
 
 The Punishment Period is the amount of time that the requester has to verify the quality of the information provided by the fulfiller. Within this window, the requester may punish the fulfiller’s stake if they are dissatisfied, but after this period of time, the information included in the fulfillment is deemed to be satisfactory and the stake is released. The requester can decide to release the stake early if they are satisfied with the submission.
 
+### How do I fulfill a request?
+
+You will need the request's **required stake** amount \(in DAI tokens\) in your Authereum wallet \([How do I  deposit](faq.md#how-do-i-deposit-money)[ money](faq.md#how-do-i-deposit-money)[?](faq.md#how-do-i-deposit-money)\). This will be locked up for the request's specified **punishment period.** During this time the requester can punish your stake if they don't like what you send them. If the requester is satisfied, they will release your stake and your reward to your Authereum wallet.
+
+When you are ready to fulfill a request, hit the **Fulfill** button on the request's page.
+
+#### Public message
+
+This is a message to your requester that will be public to anyone viewing the request page, so don't put anything secret in there. This is useful for explaining or adding any notes to your fulfillment.
+
+#### File
+
+This is the file containing the information that was requested. This will only be viewable by the requester. This can be a file of any format: a text file, a zip containing many files, an image, a video. This is currently limited to 100 megabytes.
+
+When you confirm, your file will be uploaded, the requester will be notified and the punishment period will start. The request will no longer be open to other potential fulfillers.
+
+{% hint style="danger" %}
+🧞‍♂️ Make sure you're giving the requester what they are looking for or they might destroy your staked money. If the request is unclear, try reaching out to them on Twitter for clarification.
+{% endhint %}
+
+#### Punishment period starts
+
+Once you have fulfilled the request, your stake and the reward are locked together. During the punishment period, the requester may either release the stake and reward to you, or punish you.
+
+Punishing destroys an amount of the combined stake and reward. The requester can destroy your entire stake and reward, or a fraction of it before releasing it to you. The requester has no way of getting their reward back once the request is created.
+
+#### When the punishment period ends
+
+Once the punishment period is over, all un-punished money will be sent to you and no more actions can be taken by anyone on the request.
+
 ### **How do I access my wallet?**
 
 You can access your wallet by clicking on your profile name in the top right corner of your screen. This will open up your wallet page where you can see your [DAI balance](faq.md#what-is-dai), deposit money, or access your [Authereum account](faq.md#what-is-authereum).
@@ -84,7 +114,7 @@ You can access your wallet by clicking on your profile name in the top right cor
 
 Erasure Bay uses a stablecoin called DAI for payments and stakes on the marketplace. [What is DAI?](faq.md#what-is-dai) 
 
-If you do not own any DAI yet, you can convert USD into DAI using [Wyre](https://www.sendwyre.com/). You must first sign in, click on your profile, then click the button that says **Get DAI**. This will redirect you to the page where you can convert USD to DAI using Debit Card, Apple Pay, or Google Pay depending on your browser. Wyre charges a fee to convert USD into DAI so make sure to account for it correctly.
+If you do not own any DAI tokens yet, you can convert purchase DAI using [Wyre](https://www.sendwyre.com/), [Coinbase](https://coinbase.com) or a cryptocurrency exchange. You must first sign in, click on your profile, then click the button that says **Get DAI**. This will redirect you to the page where you can convert USD to DAI using Debit Card, Apple Pay, or Google Pay depending on your browser. Wyre charges a fee to convert USD into DAI so make sure to account for it correctly.
 
 If you already own some DAI, you can transfer it to your [Authereum wallet](faq.md#what-is-an-authereum-wallet) by using the ENS address or the Ethereum address.
 
