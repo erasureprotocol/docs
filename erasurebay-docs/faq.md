@@ -168,6 +168,13 @@ Yes. While Erasure Bay uses DAI for payments and staking, it [secretly burns up 
 
 Erasure Bay does not charge any fees to use the marketplace. This is possible through the magic of crypto-economic incentives. More on this soon.
 
+### Troubleshooting
+
+Erasure Bay has been most extensively tested in Google Chrome, though should work in Firefox and Safari  \(including mobile\). Try using Chrome if you are having any issues. Let us know if you encounter any issues.
+
+Authereum requires cross-site cookies to be enabled to work correctly. Learn how here:  
+[https://docs.authereum.com/browser-compatibility](https://docs.authereum.com/browser-compatibility)
+
 ### Still need help?
 
 Contact us on [RocketChat](https://community.numer.ai/channel/erasure/) / [Twitter](http://twitter.com/numerai) / [Telegram](http://t.me/NMR_Official).
