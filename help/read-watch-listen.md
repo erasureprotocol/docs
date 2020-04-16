@@ -18,8 +18,6 @@ The film goes on to feature interview dialogue with Fred Ehrsam \(Coinbase Cofou
 
 ​[An Unstoppable Predictions Marketplace — Introducing Erasure](https://medium.com/numerai/numerai-reveals-erasure-unstoppable-peer-to-peer-data-feeds-4fbb8d92820a) -Richard Craib, October 2018
 
-​[Numerai to give away $1 million in NMR in new Erasure grants program](https://medium.com/numerai/1-million-nmr-giveaway-6f2fcbc91d29) -Max Novendstern, May 2019
-
 ​[Introducing Erasure Quant: Erasure’s first finance tournament](https://medium.com/numerai/introducing-erasure-quant-963e8e74c80c) -Max Novendstern, June 2019
 
 ​[NMR 2.0 is now live](https://medium.com/numerai/nmr2point0-66a45a9a5e70) -Stephane Gosselin, July 2019
