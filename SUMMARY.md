@@ -20,6 +20,7 @@
 ## Help
 
 * [Technical Support](help/technical-support.md)
+* [Official Metrics](help/official-metrics.md)
 * [Authereum](help/authereum.md)
 * [MetaMask](help/metamask.md)
 * [Read, watch, listen](help/read-watch-listen.md)
