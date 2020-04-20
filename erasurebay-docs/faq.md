@@ -131,7 +131,7 @@ If you already own some DAI, you can transfer it to your [Authereum wallet](faq.
 While nothing in life is risk free, you can rest assured your money is safe. Erasure Bay uses the [Erasure Protocol](faq.md#what-is-erasure-protocol) to secure your funds. Make sure you remember the following: 
 
 * **Wallet Balance:** The money in your wallet is secured by the [Authereum](faq.md#what-is-authereum). 
-* **Reward:** The money attached to a request reward is locked up in an escrow and can be fulfilled by anyone on a first come first serve basis. Once the request is fulfilled, the reward is added to the fulfiller's stake and it is no longer possible for the requester to get it back. If no one fulfills the request, the requester can cancel the request to retrieve the reward.
+* **Reward:** The money attached to a request reward is locked up in an escrow and can be fulfilled by anyone on a first come first serve basis. Once the request is fulfilled and the payment released, the reward is added to the fulfiller's stake and it is no longer possible for the requester to get it back. If no one fulfills the request, the requester can cancel the request to retrieve the reward.
 * **Stake:** The money locked up in a stake includes the stake of the fulfiller and the reward of the requester. This stake is locked up in the escrow until the requester releases it or the [punish period](faq.md#how-do-i-make-a-request) is over. Be careful, the requester can burn the stake at any time during the punish period according to the [punish ratio](faq.md#how-do-i-make-a-request) if they are unsatisfied with the fulfillment.
 
 ### **Why use Twitter?**
