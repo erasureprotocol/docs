@@ -136,19 +136,20 @@ While nothing in life is risk free, you can rest assured your money is safe. Era
 
 ### **Why use Twitter?**
 
-Twitter fulfills multiple purposes on Erasure Bay:
+Twitter fulfills a few purposes on Erasure Bay:
 
-1. Build trust amongst marketplace participants
-2. Do content discovery through the bot [@ErasureBay](https://twitter.com/erasurebay)
+1. Build trust with participants by associating an identity to your requests
+2. Discover content through our bot [@ErasureBay](https://twitter.com/erasurebay)
 3. Receive notifications when a request is fulfilled
+4. Allows for communication like negotiation of terms
 
-We only ask for the [minimum OAuth permissions](https://developer.twitter.com/en/docs/basics/apps/guides/app-permissions) available to establish a provable link between your Authereum wallet and your Twitter account. This permission is a one time access.
+We ask for the [minimum OAuth permissions](https://developer.twitter.com/en/docs/basics/apps/guides/app-permissions) available to establish a provable link between your Authereum wallet and your Twitter account. This only happens once.
 
 ### **What is Authereum?**
 
-[Authereum](https://authereum.com/) is a wallet which allows you to store money that you can use with applications like Erasure Bay built on the [Ethereum blockchain](https://docs.ethhub.io/ethereum-basics/what-is-ethereum/). You can access your Erasure Bay account from any device by logging in with your Authereum username and password. You can use your Authereum account to [deposit money](faq.md#how-do-i-deposit-money) to Erasure Bay.
+[Authereum](https://authereum.com/) is a cryptocurrency wallet like MetaMask. Unlike MetaMask it does not require a browser addon, so works on any device like your phone or tablet. You can use your Authereum account to [deposit money](faq.md#how-do-i-deposit-money) to Erasure Bay.
 
-Authereum is a non-custodial wallet which means no one has access to your money. This means you do not have to trust anyone but yourself. Authereum makes it easy for non-technical users to keep their keys secure while providing advanced features. You can read [here](https://medium.com/authereum/authereum-key-architecture-explained-8e0781cf3ea0) if you’d like a more advanced understanding of Authereum’s contract-account architecture.
+Authereum is a non-custodial wallet which means no one but you has access to your money. Authereum makes it easy for non-technical users to keep their currency secure while providing advanced features. Read [here](https://medium.com/authereum/authereum-key-architecture-explained-8e0781cf3ea0) for a more advanced understanding of Authereum’s contract-account architecture.
 
 {% hint style="danger" %}
 🧞‍♂️**Be careful:** Your Authereum account secures all the money and valuable information you submit to Erasure Bay. Make sure to choose a secure password and store it with a password manager like [1password](https://1password.com/) or [lastpass](https://www.lastpass.com/). For more tips on keeping your wallet secure, see the [Authereum blog](https://link.medium.com/maY63KJmK4).
