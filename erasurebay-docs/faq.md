@@ -112,14 +112,14 @@ You can access your wallet by clicking on your profile name in the top right cor
 
 ### How do I deposit money?
 
-Erasure Bay uses a stablecoin called DAI for payments and stakes on the marketplace. [What is DAI?](faq.md#what-is-dai) 
+Erasure Bay uses DAI cryptocurrency \(a stablecoin\) for payments and stakes. [What is DAI?](faq.md#what-is-dai) 
 
-If you do not own any DAI tokens yet, you can convert purchase DAI using [Wyre](https://www.sendwyre.com/), [Coinbase](https://coinbase.com) or a cryptocurrency exchange. You must first sign in, click on your profile, then click the button that says **Get DAI**. This will redirect you to the page where you can convert USD to DAI using Debit Card, Apple Pay, or Google Pay depending on your browser. Wyre charges a fee to convert USD into DAI so make sure to account for it correctly.
+If you do not own any DAI tokens, you can purchase DAI using [Wyre](https://www.sendwyre.com/), [Coinbase](https://coinbase.com) or a cryptocurrency exchange.
 
-If you already own some DAI, you can transfer it to your [Authereum wallet](faq.md#what-is-an-authereum-wallet) by using the ENS address or the Ethereum address.
+If you already own some DAI, you can transfer it to your [Authereum wallet](faq.md#what-is-an-authereum-wallet) by using the ENS address or the Ethereum address displayed when you click on your username on Erasure Bay.
 
 {% hint style="info" %}
-🧙‍♂️**Hint:** Wyre can be unreliable for debit card payments. If you are having issues, try using Apple Pay on Safari for IOS.
+🧙‍♂️**Hint:** Wyre can be unreliable for debit card payments. If you are having issues, try using Apple Pay in Safari on Mac or iOS.
 {% endhint %}
 
 {% hint style="info" %}
