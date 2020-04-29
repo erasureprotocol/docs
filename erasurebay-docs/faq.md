@@ -114,7 +114,7 @@ You can access your wallet by clicking on your profile name in the top right cor
 
 Erasure Bay uses DAI cryptocurrency \(a stablecoin\) for payments and stakes. [What is DAI?](faq.md#what-is-dai) 
 
-If you do not own any DAI tokens, you can purchase DAI using [Wyre](https://www.sendwyre.com/), [Coinbase](https://coinbase.com) or a cryptocurrency exchange.
+If you do not own any DAI tokens, you can purchase DAI using [Wyre](https://pay.sendwyre.com/), [Coinbase](https://coinbase.com) or a cryptocurrency exchange.
 
 If you already own some DAI, you can transfer it to your [Authereum wallet](faq.md#what-is-an-authereum-wallet) by using the ENS address or the Ethereum address displayed when you click on your username on Erasure Bay.
 
