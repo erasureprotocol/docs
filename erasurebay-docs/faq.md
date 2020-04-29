@@ -140,8 +140,8 @@ Twitter fulfills a few purposes on Erasure Bay:
 
 1. Build trust with participants by associating an identity to your requests
 2. Discover content through our bot [@ErasureBay](https://twitter.com/erasurebay)
-3. Receive notifications when a request is fulfilled
-4. Allows for communication like negotiation of terms
+3. Receive notifications when someone interacts with your request or fulfillment
+4. Allows for communication, like the negotiation of terms
 
 We ask for the [minimum OAuth permissions](https://developer.twitter.com/en/docs/basics/apps/guides/app-permissions) available to establish a provable link between your Authereum wallet and your Twitter account. This only happens once.
 
