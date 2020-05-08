@@ -6,17 +6,19 @@ description: Frequently Asked Questions about Erasure Bay
 
 ### **What is Erasure Bay?**
 
-Erasure Bay is an unstoppable information marketplace built on top of the Erasure Protocol. The marketplace is fully decentralized and peer-to-peer. You can use Erasure Bay to [ask the internet for any information](faq.md#what-can-i-request). Be careful! Anyone can fulfill a request on a first come first serve basis to claim the reward, so make sure you get it right. When fulfilling a request, sellers must [put money at stake](https://docs.erasure.world/erasurebay-docs/faq#how-do-i-make-a-request) which gives the requester the ability to [punish their stake and their reward](faq.md#what-is-a-punishment) if they are unsatisfied.
+Erasure Bay is an app for requesting any information in the world. Ask for anything that could conceivable fit in a file. Erasure Bay is fully decentralized and peer-to-peer and built using the Erasure protocol on Ethereum and IPFS.
+
+Someone fulfilling a request must [put money at stake](https://docs.erasure.world/erasurebay-docs/faq#how-do-i-make-a-request) which gives the requester the ability to [punish their stake and their reward](faq.md#what-is-a-punishment) if they are unsatisfied with the information provided.
+
+Anyone can fulfill a request on a first come first serve basis to claim the reward, so make sure your request requires a decent stake.
 
 ### **What is Erasure Protocol?**
 
-The Erasure Protocol is a new set of primitives which allows for building new kinds of applications on the internet. It solves many of the fundamental problems the internet has today. Find out more at [erasure.world](https://erasure.world/).
+The Erasure Protocol is a new set of primitives which allows for building new kinds of information applications on the internet. It solves many of the fundamental problems the internet has today. Find out more at [erasure.world](https://erasure.world/).
 
-### **How do I get started?**
+### **How do I get started with Erasure Bay?**
 
-**Don't like to read?** Me neither. [Watch video tutorial here](new-bay-user-walkthrough.md)
-
-**To view existing requests:** Follow [@ErasureBay](https://twitter.com/ErasureBay) on Twitter.
+**To view existing requests:** See [@ErasureBay](https://twitter.com/ErasureBay) on Twitter.
 
 **To make or fulfill a request:**
 
@@ -26,9 +28,13 @@ The Erasure Protocol is a new set of primitives which allows for building new ki
 4. [Deposit money](faq.md#how-do-i-deposit-money) into your wallet.
 5. You are ready to [make](faq.md#how-do-i-make-a-request) or [fulfill](faq.md#how-do-i-fulfill-a-request) a request!
 
+**Don't like to read?** [Watch video tutorial here](new-bay-user-walkthrough.md)
+
 ### **What can I request?**
 
-You can request anything that can be expressed in digital form. You can see existing request by following [@ErasureBay](https://twitter.com/ErasureBay) on Twitter to get a sense of what people are requesting. Fulfilling a request requires uploading a file that meets the expectation of the requester. It could be a dataset, a photo that proves a task was completed, a software vulnerability exploit, or anything in between. Video files, image files, text files; the possibilities are almost limitless. Maybe your business wants to host an infosec bounty program. Maybe you want to determine if your intellectual property is being traded on the Dark Web. You can make a request for any information and another user will fulfill it.
+You can request anything that can be expressed in a file. You can see existing request by following [@ErasureBay](https://twitter.com/ErasureBay) on Twitter to get a sense of what people are requesting.
+
+Fulfilling a request requires uploading a file that meets the expectation of the requester. It could be a dataset, a photo that proves a task was completed, a software vulnerability exploit, or anything in between. Video files, image files, text files; the possibilities are almost limitless. Maybe your business wants to host an infosec bounty program. Maybe you want to determine if your intellectual property is being traded on the Dark Web. You can make a request for any information and another user will fulfill it.
 
 ### **How do I make a request?**
 
