@@ -106,9 +106,9 @@ Once the punishment period is over, all un-punished money will be sent to you an
 
 ### **How do I access my wallet?**
 
-You can access your wallet by clicking on your profile name in the top right corner of your screen. This will open up your wallet page where you can see your [DAI balance](faq.md#what-is-dai), deposit money, or access your [Authereum account](faq.md#what-is-authereum).
+You can access your wallet by clicking on your profile name in the top right corner of your screen. This will open up your wallet page where you can see your [DAI balance](faq.md#what-is-dai) and wallet address and access your [Authereum account](faq.md#what-is-authereum).
 
-![](../.gitbook/assets/screen-shot-2020-03-10-at-6.22.21-am.png)
+![](../.gitbook/assets/screenshot-2020-05-08-at-16.51.28.png)
 
 ### How do I deposit money?
 
@@ -147,9 +147,11 @@ We ask for the [minimum OAuth permissions](https://developer.twitter.com/en/docs
 
 ### **What is Authereum?**
 
-[Authereum](https://authereum.com/) is a cryptocurrency wallet like MetaMask. Unlike MetaMask it does not require a browser addon, so works on any device like your phone or tablet. You can use your Authereum account to [deposit money](faq.md#how-do-i-deposit-money) to Erasure Bay.
+**Authereum is a cryptocurrency wallet like MetaMask**. Unlike MetaMask it does not require a browser addon, so works on any device like your phone or tablet. You can use your Authereum account to [deposit money](faq.md#how-do-i-deposit-money) to Erasure Bay.
 
 Authereum is a non-custodial wallet which means no one but you has access to your money. Authereum makes it easy for non-technical users to keep their currency secure while providing advanced features. Read [here](https://medium.com/authereum/authereum-key-architecture-explained-8e0781cf3ea0) for a more advanced understanding of Authereum’s contract-account architecture.
+
+Erasure Bay does not currently support MetaMask.
 
 {% hint style="danger" %}
 🧞‍♂️**Be careful:** Your Authereum account secures all the money and valuable information you submit to Erasure Bay. Make sure to choose a secure password and store it with a password manager like [1password](https://1password.com/) or [lastpass](https://www.lastpass.com/). For more tips on keeping your wallet secure, see the [Authereum blog](https://link.medium.com/maY63KJmK4).
@@ -157,24 +159,27 @@ Authereum is a non-custodial wallet which means no one but you has access to you
 
 ### **What is DAI?** 
 
-DAI is a digital representation of a US dollar. It's a stable cryptocurrency that runs on the [Ethereum blockchain](https://docs.ethhub.io/ethereum-basics/what-is-ethereum/). DAI's value is backed by cryptocurrency collateral, mainly ether, the currency of the Ethereum blockchain. Dai maintains its stability to the dollar by aligning market incentives among thousands of global actors. DAI allows for the use of smart contract platforms like the [Erasure Protocol](faq.md#what-is-erasure-protocol). 
+**A DAI token is a digital representation of one US dollar.** It is a stable cryptocurrency that runs on the [Ethereum blockchain](https://docs.ethhub.io/ethereum-basics/what-is-ethereum/) whose price aims to stay at roughly 1 USD per DAI.  
+  
+DAI's value is backed by cryptocurrency collateral, mainly ether, the currency of the Ethereum blockchain. DAI maintains its stability to the dollar by aligning market incentives among thousands of global actors. DAI allows for the use of smart contract platforms like the [Erasure Protocol](faq.md#what-is-erasure-protocol). 
 
 You can learn more about stablecoins like DAI [here](https://blog.dharma.io/what-is-a-stablecoin/).
 
 ### **Does Erasure Bay use NMR?**
 
-Yes. While Erasure Bay uses DAI for payments and staking, it [secretly burns up NMR in the background](https://medium.com/numerai/wheres-nmr-4b411db1e07c?source=friends_link&sk=1c1553ec198e3b486b9a40a39d2e4503).
+**Yes**. While Erasure Bay uses DAI for payments and staking, it [burns up NMR in the background](https://medium.com/numerai/wheres-nmr-4b411db1e07c?source=friends_link&sk=1c1553ec198e3b486b9a40a39d2e4503).
 
-### **What are the fees?**
+### **Are there any fees?**
 
-Erasure Bay does not charge any fees to use the marketplace. This is possible through the magic of crypto-economic incentives. More on this soon.
+**Erasure Bay does not charge any fees**. This is possible through the magic of crypto-economic incentives. More on this soon.
 
 ### Troubleshooting
 
-Erasure Bay has been most extensively tested in Google Chrome, though should work in Firefox and Safari  \(including mobile\). Try using Chrome if you are having trouble. Let us know if you encounter any issues.
+Erasure Bay has been most extensively tested in **Google Chrome**, though works in **Firefox** and **Safari** \(including mobile\). If you are using **Brave**, make sure Brave Shield is turned off.  
+  
+If you are experiencing issues signing in, try visiting [Authereum.com](https://authereum.com) and logging out and back in again.
 
-Authereum requires cross-site cookies to be enabled to work correctly. Learn how here:  
-[https://docs.authereum.com/browser-compatibility](https://docs.authereum.com/browser-compatibility)
+Authereum requires cross-site cookies to be enabled to work correctly. Learn how here: [https://docs.authereum.com/browser-compatibility](https://docs.authereum.com/browser-compatibility)
 
 ### Still need help?
 
