@@ -177,7 +177,7 @@ You can learn more about stablecoins like DAI [here](https://blog.dharma.io/what
 
 ### **Are there any fees?**
 
-**Erasure Bay does not charge any fees**. This is possible through the magic of crypto-economic incentives. More on this soon.
+**Erasure Bay does not charge any fees**. Normal, nominal Ethereum transaction fees will apply.
 
 ### Troubleshooting
 
