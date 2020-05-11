@@ -181,11 +181,13 @@ You can learn more about stablecoins like DAI [here](https://blog.dharma.io/what
 
 ### Troubleshooting
 
-Erasure Bay has been most extensively tested in **Google Chrome**, though works in **Firefox** and **Safari** \(including mobile\). If you are using **Brave**, make sure Brave Shield is turned off.  
-  
-If you are experiencing issues signing in, try visiting [Authereum.com](https://authereum.com) and logging out and back in again.
+Erasure Bay has been most extensively tested in **Google Chrome**, though works in **Firefox** and **Safari** \(including mobile\). If you are using **Brave**, make sure Brave Shield is turned off.
 
-Authereum requires cross-site cookies to be enabled to work correctly. Learn how here: [https://docs.authereum.com/browser-compatibility](https://docs.authereum.com/browser-compatibility)
+**Private/incognito mode** may interfere with your connection to your Authereum wallet.
+
+If you are experiencing issues while using Safari, try **allowing cross site tracking**. Erasure Bay uses cross-site cookies to communicate with your Authereum wallet in the background. Learn more here: [https://docs.authereum.com/browser-compatibility](https://docs.authereum.com/browser-compatibility)  
+  
+If you are experiencing issues signing in, try visiting [**Authereum.com**](https://authereum.com) and logging out and back in again.
 
 ### Still need help?
 
