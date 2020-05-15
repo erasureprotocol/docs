@@ -179,15 +179,21 @@ You can learn more about stablecoins like DAI [here](https://blog.dharma.io/what
 
 **Erasure Bay does not charge any fees**. Normal, nominal Ethereum transaction fees will apply.
 
-### Troubleshooting
+### 😭 Troubleshooting
 
-Erasure Bay has been most extensively tested in **Google Chrome**, though works in **Firefox** and **Safari** \(including mobile\). If you are using **Brave**, make sure Brave Shield is turned off.
+Erasure Bay has been most extensively tested in **Google Chrome**, though works in **Firefox**, **Safari**, ****including mobile, and **Brave**. \(If you are using Brave, make sure Brave Shield is turned off.\)
 
-**Private/incognito mode** may interfere with your connection to your Authereum wallet.
+If you are experiencing issues signing in, try then signing out at [**Authereum.com**](https://authereum.com)
 
-If you are experiencing issues while using Safari, try **allowing cross site tracking**. Erasure Bay uses cross-site cookies to communicate with your Authereum wallet in the background. Learn more here: [https://docs.authereum.com/browser-compatibility](https://docs.authereum.com/browser-compatibility)  
+You may experience issues with Authereum, the built-in wallet Erasure Bay uses, with certain **browser settings**:
+
+**Private/incognito mode** may interfere with your connection to your Authereum wallet. Try turning that off if you are having trouble.
+
+If you are experiencing issues while using Safari, try **allowing cross site tracking** in _Preferences_. Erasure Bay uses cross-site cookies to communicate with your Authereum wallet in the background.  
   
-If you are experiencing issues signing in, try visiting [**Authereum.com**](https://authereum.com) and logging out and back in again.
+****Learn more about browser compatibility here: [https://docs.authereum.com/browser-compatibility](https://docs.authereum.com/browser-compatibility)
+
+
 
 ### Still need help?
 
