@@ -187,7 +187,7 @@ If you are experiencing issues signing in, try then signing out at [**Authereum.
 
 You may experience issues with Authereum, the built-in wallet Erasure Bay uses, with certain **browser settings**:
 
-**Private/incognito mode** may interfere with your connection to your Authereum wallet. Try turning that off if you are having trouble.
+**Private/incognito mode** and **popup blocking** may interfere with your connection to your Authereum wallet. Try turning them off if you are having trouble.
 
 If you are experiencing issues while using Safari, try **allowing cross site tracking** in _Preferences_. Erasure Bay uses cross-site cookies to communicate with your Authereum wallet in the background.  
   
