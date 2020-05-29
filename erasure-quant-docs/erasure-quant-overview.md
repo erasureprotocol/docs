@@ -4,6 +4,12 @@
 Erasure Quant payments are ending on Jun 12th, 2020. If you are currently staked, you should begin withdrawals as soon as you can.
 {% endhint %}
 
+{% hint style="info" %}
+A better version of Erasure Quant is being rebuilt inside of Numerai.   
+You will be able to use your existing Numerai account to participate and it will be much more stable. No more Meta Mask. Coming Summer 2020.  
+Stay up to date at [https://community.numer.ai](https://community.numer.ai/)
+{% endhint %}
+
 Erasure Quant is a new decentralized marketplace for stock market data built on Ethereum. It allows anybody to upload signals, build a track record that anyone can verify, and earn money. [Read the original Medium post on why we built Erasure](https://medium.com/numerai/numerai-reveals-erasure-unstoppable-peer-to-peer-data-feeds-4fbb8d92820a).
 
 ### **How ErasureQuant Works**
