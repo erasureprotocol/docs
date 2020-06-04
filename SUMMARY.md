@@ -9,6 +9,14 @@
 * [FAQ](erasurebay-docs/faq.md)
 * [Bay App](https://erasurebay.org/)
 
+## Office Hours
+
+* [Office Hours Recaps](office-hours/office-hours-recaps/README.md)
+  * [Erasure Bay Office Hours \#1](office-hours/office-hours-recaps/erasure-bay-office-hours-1.md)
+  * [Erasure Bay Office Hours \#2](office-hours/office-hours-recaps/erasure-bay-office-hours-2.md)
+  * [Erasure Bay Office Hours \#3](office-hours/office-hours-recaps/erasure-bay-office-hours-3.md)
+* [FAQ in Office Hours](office-hours/faq-in-office-hours.md)
+
 ## Erasure Quant <a id="erasure-quant-docs"></a>
 
 * [Quant overview](erasure-quant-docs/erasure-quant-overview.md)
