@@ -20,9 +20,7 @@
 ## Erasure Quant <a id="erasure-quant-docs"></a>
 
 * [Quant overview](erasure-quant-docs/erasure-quant-overview.md)
-* [Quant tools and libraries](erasure-quant-docs/quant-tools-and-libraries.md)
 * [Quant App](http://erasurequant.com/)
-* [New Quant user walkthrough](erasure-quant-docs/new-user-walkthrough.md)
 * [Uniswap tutorial](erasure-quant-docs/uniswap-tutorial.md)
 
 ## Help
