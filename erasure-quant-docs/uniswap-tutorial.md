@@ -1,3 +1,7 @@
+---
+description: 'This page will be deleted June 30th, 2020 // Visit https://signals.numer.ai'
+---
+
 # Uniswap tutorial
 
 Video link: [https://youtu.be/p1uOex7cEP4](https://youtu.be/p1uOex7cEP4)

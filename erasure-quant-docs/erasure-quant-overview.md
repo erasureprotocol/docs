@@ -2,7 +2,7 @@
 description: 'This page will be deleted June 30th, 2020 // Visit https://signals.numer.ai'
 ---
 
-# Quant overview
+# Quant Overview
 
 {% hint style="warning" %}
 Erasure Quant payments are ending on Jun 12th, 2020. If you are currently staked, you should begin withdrawals as soon as you can.

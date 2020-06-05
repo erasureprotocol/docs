@@ -19,9 +19,9 @@
 
 ## Erasure Quant <a id="erasure-quant-docs"></a>
 
-* [Quant overview](erasure-quant-docs/erasure-quant-overview.md)
-* [Quant App](http://erasurequant.com/)
+* [Quant Overview](erasure-quant-docs/erasure-quant-overview.md)
 * [Uniswap tutorial](erasure-quant-docs/uniswap-tutorial.md)
+* [Numerai Signals](https://signals.numer.ai)
 
 ## Help
 
