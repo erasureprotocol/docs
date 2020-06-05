@@ -14,7 +14,7 @@ You will be able to use your existing Numerai account to participate and it will
 Stay up to date at [https://community.numer.ai](https://community.numer.ai/)
 {% endhint %}
 
-Erasure Quant launched in XX and was a brand new kind of decentralized marketplace for stock market data built on Ethereum. It allowed anybody to upload signals, build a track record that anyone can verify, and earn money. [Read the original Medium post on why we built Erasure](https://medium.com/numerai/numerai-reveals-erasure-unstoppable-peer-to-peer-data-feeds-4fbb8d92820a).
+Erasure Quant launched in 2019 and was a brand new kind of decentralized marketplace for stock market data built on Ethereum. It allowed anybody to upload signals, build a track record that anyone can verify, and earn money. [Read the original Medium post on why we built Erasure](https://medium.com/numerai/numerai-reveals-erasure-unstoppable-peer-to-peer-data-feeds-4fbb8d92820a).
 
 A better version of Erasure Quant has been rebuilt inside of Numerai. 
 
