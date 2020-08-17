@@ -23,7 +23,6 @@
   * [Erasure Bay Office Hours \#1](office-hours/office-hours-recaps/erasure-bay-office-hours-1.md)
   * [Erasure Bay Office Hours \#2](office-hours/office-hours-recaps/erasure-bay-office-hours-2.md)
   * [Erasure Bay Office Hours \#3](office-hours/office-hours-recaps/erasure-bay-office-hours-3.md)
-* [FAQ in Office Hours](office-hours/faq-in-office-hours.md)
 
 ## Erasure Quant <a id="erasure-quant-docs"></a>
 
