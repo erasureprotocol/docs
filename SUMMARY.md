@@ -12,7 +12,6 @@
 ## Numerai Signals <a id="numerai-signals-1"></a>
 
 * [About Signals](numerai-signals-1/about-signals.md)
-* [FAQ](numerai-signals-1/faq.md)
 
 ## Numerai Tournament
 

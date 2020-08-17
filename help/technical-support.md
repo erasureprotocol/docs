@@ -1,12 +1,6 @@
 # Technical Support
 
-Erasure Quant: quant@numer.ai
-
-ErasureBay: truth@numer.ai
-
-Erasure Grants: grants@numer.ai
-
-Ask the [RocketChat Community](https://community.numer.ai/channel/erasure)
+Ask the [RocketChat Community](https://community.numer.ai/channel/erasure) in the \#Erasure, \#ErasureBay, \#Signals and \#General channels. You can also email support@numer.ai.
 
 
 
