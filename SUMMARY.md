@@ -9,6 +9,15 @@
 * [FAQ](erasurebay-docs/faq.md)
 * [Bay App](https://erasurebay.org/)
 
+## Numerai Signals <a id="numerai-signals-1"></a>
+
+* [About Signals](numerai-signals-1/about-signals.md)
+* [FAQ](numerai-signals-1/faq.md)
+
+## Numerai Tournament
+
+* [The Numerai Tournament](numerai-tournament/numerai-tournament.md)
+
 ## Office Hours
 
 * [Office Hours Recaps](office-hours/office-hours-recaps/README.md)
@@ -31,7 +40,6 @@
 * [MetaMask](help/metamask.md)
 * [Read, watch, listen](help/read-watch-listen.md)
 * [FAQ](help/faq.md)
-* [Numerai Tournament](help/numerai-tournament.md)
 
 ## Numeraire
 

@@ -1,5 +1,7 @@
 ---
-description: 'This page will be deleted June 30th, 2020 // Visit https://signals.numer.ai'
+description: >-
+  This page will be deleted September 30th, 2020 // Visit
+  https://signals.numer.ai
 ---
 
 # Uniswap tutorial
