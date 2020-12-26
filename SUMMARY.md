@@ -41,19 +41,21 @@
 
 ## Numeraire
 
+* [Numeraire Index](numeraire/numeraire-index.md)
+* [Tournament Stake Info](https://numer.ai/tournament)
+* [Supply Information](https://numer.ai/nmr)
 * [DeFi Pulse](https://defipulse.com/erasure)
-* [Stake numbers](http://stakes.numer.ai/)
-* [Supply information](https://numer.ai/nmr)
 * [Etherscan](https://etherscan.io/token/0x1776e1f26f98b1a5df9cd347953a26dd3cb46671)
 * [Contract](https://github.com/numerai/contract)
 
 ## Connect
 
+* [Connect Index](connect/connect-index.md)
+* [RocketChat](https://community.numer.ai/channel/erasure)
 * [Twitter](https://twitter.com/numerai)
-* [RocketChat Community](https://community.numer.ai/channel/erasure)
 * [Medium](https://medium.com/numerai)
+* [r/numerai](https://reddit.com/r/numerai)
 * [Meetup](http://meetup.com/Numerai/)
-* [Reddit](https://reddit.com/r/numerai)
 * [Telegram](https://t.me/NMR_Official)
 * [Blockfolio Signal](https://blockfolio.com/coin/NMR)
 * [Open Positions](https://angel.co/company/numerai/jobs)
