@@ -74,7 +74,7 @@ The required stake is the amount of money a fulfiller needs to attach to their f
 
 **Punishment Ratio**
 
-Punishments keep sellers honest. When a fulfiller attaches a stake to their fulfillment, they give the right to the requester to burn their stake. This protects requesters since they can now punish fulfillers that provide incorrect or low-quality information. Burning a stake means that the money is deleted forever. A punishment is not free. In order to punish, the requester must burn an proportional amount of money according to the selected punishment ratio. An intuitive way to think about the punishment ratio is as how much it costs to punish $1 of the stake. For instance, if the stake is $1,000, the punishment ratio 0.1, and the requester wants to punish for $100 from the stake, then it will cost the requester $100\*0.1 = $10.
+Punishments keep sellers honest. When a fulfiller attaches a stake to their fulfillment, they give the right to the requester to burn their stake. This protects requesters since they can now punish fulfillers that provide incorrect or low-quality information. Burning a stake means that the money is deleted forever. A punishment is not free. In order to punish, the requester must burn a proportional amount of money according to the selected punishment ratio. An intuitive way to think about the punishment ratio is as how much it costs to punish $1 of the stake. For instance, if the stake is $1,000, the punishment ratio 0.1, and the requester wants to punish for $100 from the stake, then it will cost the requester $100\*0.1 = $10.
 
 **Punishment Period**
 
